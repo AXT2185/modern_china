@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =============================================================
+     现代中国 : 「工作重心」项目（需城市拥有代表大会）
+     ============================================================= -->
+<GameData>
+  <Projects>
+    <Row>
+      <ProjectType>PROJECT_MC_WORK_ECONOMY</ProjectType>
+      <Name>LOC_PROJECT_MC_WORK_ECONOMY_NAME</Name>
+      <ShortName>LOC_PROJECT_MC_WORK_ECONOMY_NAME</ShortName>
+      <Description>LOC_PROJECT_MC_WORK_ECONOMY_DESCRIPTION</Description>
+      <Cost>300</Cost>
+      <CostProgressionModel>NO_PROGRESSION_MODEL</CostProgressionModel>
+      <PrereqDistrict>DISTRICT_CONGRESS</PrereqDistrict>
+      <AdvisorType>ADVISOR_GENERIC</AdvisorType>
+    </Row>
+    <Row>
+      <ProjectType>PROJECT_MC_WORK_CULTURE</ProjectType>
+      <Name>LOC_PROJECT_MC_WORK_CULTURE_NAME</Name>
+      <ShortName>LOC_PROJECT_MC_WORK_CULTURE_NAME</ShortName>
+      <Description>LOC_PROJECT_MC_WORK_CULTURE_DESCRIPTION</Description>
+      <Cost>300</Cost>
+      <CostProgressionModel>NO_PROGRESSION_MODEL</CostProgressionModel>
+      <PrereqDistrict>DISTRICT_CONGRESS</PrereqDistrict>
+      <AdvisorType>ADVISOR_GENERIC</AdvisorType>
+    </Row>
+    <Row>
+      <ProjectType>PROJECT_MC_WORK_TECH</ProjectType>
+      <Name>LOC_PROJECT_MC_WORK_TECH_NAME</Name>
+      <ShortName>LOC_PROJECT_MC_WORK_TECH_NAME</ShortName>
+      <Description>LOC_PROJECT_MC_WORK_TECH_DESCRIPTION</Description>
+      <Cost>200</Cost>
+      <CostProgressionModel>NO_PROGRESSION_MODEL</CostProgressionModel>
+      <PrereqDistrict>DISTRICT_CONGRESS</PrereqDistrict>
+      <AdvisorType>ADVISOR_GENERIC</AdvisorType>
+    </Row>
+  </Projects>
+</GameData>

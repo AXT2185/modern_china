@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =============================================================
+     现代中国 : 特色区域「代表大会」(替代市政广场，每城一座、取消文明上限)
+     ============================================================= -->
+<GameData>
+
+  <DistrictReplaces>
+    <Row CivUniqueDistrictType="DISTRICT_CONGRESS" ReplacesDistrictType="DISTRICT_GOVERNMENT"/>
+  </DistrictReplaces>
+
+  <Districts>
+    <Row>
+      <DistrictType>DISTRICT_CONGRESS</DistrictType>
+      <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
+      <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
+      <PrereqCivic>CIVIC_STATE_WORKFORCE</PrereqCivic>
+      <PlunderType>PLUNDER_CULTURE</PlunderType>
+      <PlunderAmount>25</PlunderAmount>
+      <AdvisorType>ADVISOR_GENERIC</AdvisorType>
+      <Cost>15</Cost>
+      <CostProgressionModel>COST_PROGRESSION_GAME_PROGRESS</CostProgressionModel>
+      <CostProgressionParam1>500</CostProgressionParam1>
+      <Maintenance>0</Maintenance>
+      <RequiresPlacement>true</RequiresPlacement>
+      <RequiresPopulation>false</RequiresPopulation>
+      <OnePerCity>true</OnePerCity>
+      <Aqueduct>false</Aqueduct>
+      <NoAdjacentCity>false</NoAdjacentCity>
+      <InternalOnly>false</InternalOnly>
+      <ZOC>false</ZOC>
+      <CaptureRemovesBuildings>false</CaptureRemovesBuildings>
+      <CaptureRemovesCityDefenses>false</CaptureRemovesCityDefenses>
+      <CaptureRemovesDistrict>true</CaptureRemovesDistrict>
+      <MilitaryDomain>NO_DOMAIN</MilitaryDomain>
+      <CityStrengthModifier>2</CityStrengthModifier>
+      <TraitType>TRAIT_CIVILIZATION_CONGRESS</TraitType>
+    </Row>
+  </Districts>
+
+</GameData>

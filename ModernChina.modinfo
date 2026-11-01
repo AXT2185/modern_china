@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="5">
+  <Properties>
+    <Name>LOC_MODERN_CHINA_MOD_TITLE</Name>
+    <Description>LOC_MODERN_CHINA_MOD_DESCRIPTION</Description>
+    <Authors>ModernChina Pack</Authors>
+    <Created>1770000000</Created>
+    <Teaser>LOC_MODERN_CHINA_MOD_TEASER</Teaser>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <References>
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="LOC_EXPANSION1_MOD_TITLE" />
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="LOC_EXPANSION2_MOD_TITLE" />
+  </References>
+  <ActionCriteria>
+    <Criteria id="leaderPlayable">
+      <LeaderPlayable>Players:Expansion1_Players::LEADER_MAO,Players:Expansion2_Players::LEADER_MAO,Players:Expansion1_Players::LEADER_QIAN_XUESEN,Players:Expansion2_Players::LEADER_QIAN_XUESEN</LeaderPlayable>
+    </Criteria>
+    <Criteria id="Expansion1">
+      <GameCoreInUse>Expansion1,Expansion2</GameCoreInUse>
+    </Criteria>
+    <Criteria id="Expansion2">
+      <GameCoreInUse>Expansion2</GameCoreInUse>
+    </Criteria>
+  </ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="MCFrontDatabase">
+      <File>Data/ModernChina_Config.xml</File>
+    </UpdateDatabase>
+    <UpdateText id="MCFrontText">
+      <File>Text/ModernChina_Text_zh_Hans_CN.xml</File>
+      <File>Text/ModernChina_Text_en_US.xml</File>
+    </UpdateText>
+    <UpdateIcons id="MCFrontIcons">
+      <File>Data/ModernChina_Icons.xml</File>
+    </UpdateIcons>
+    <UpdateColors id="MCFrontColors">
+      <File>Data/ModernChina_Colors.xml</File>
+    </UpdateColors>
+    <UpdateArt id="MCFrontArt">
+      <File>ModernChinaArt.dep</File>
+    </UpdateArt>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="MCDatabase">
+      <Criteria>leaderPlayable</Criteria>
+      <File>Data/ModernChina_Types.sql</File>
+      <File>Data/ModernChina_Civilization.sql</File>
+      <File>Data/ModernChina_Districts.xml</File>
+      <File>Data/ModernChina_Qian.xml</File>
+      <File>Data/ModernChina_Units.sql</File>
+      <File>Data/ModernChina_Projects.xml</File>
+      <File>Data/ModernChina_Leaders.sql</File>
+      <File>Data/ModernChina_Modifiers.xml</File>
+      <File>Data/ModernChina_WorkProjects.xml</File>
+      <File>Data/ModernChina_Generated.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="MCDatabase_Governors">
+      <Criteria>leaderPlayable</Criteria>
+      <Criteria>Expansion1</Criteria>
+      <File>Data/ModernChina_Governors.xml</File>
+      <File>Data/ModernChina_GovernorsGenerated.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="MCDatabase_XP2">
+      <Criteria>leaderPlayable</Criteria>
+      <Criteria>Expansion2</Criteria>
+      <File>Data/ModernChina_XP2.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="MCIcons">
+      <Criteria>leaderPlayable</Criteria>
+      <File>Data/ModernChina_Icons.xml</File>
+      <File>Data/ModernChina_IconsGameplay.xml</File>
+    </UpdateIcons>
+    <UpdateText id="MCText">
+      <Criteria>leaderPlayable</Criteria>
+      <File>Text/ModernChina_Text_zh_Hans_CN.xml</File>
+      <File>Text/ModernChina_Text_en_US.xml</File>
+    </UpdateText>
+    <UpdateColors id="MCColors">
+      <Criteria>leaderPlayable</Criteria>
+      <File>Data/ModernChina_Colors.xml</File>
+    </UpdateColors>
+    <AddGameplayScripts id="MCScripts">
+      <Criteria>leaderPlayable</Criteria>
+      <File>Scripts/ModernChinaScript.lua</File>
+    </AddGameplayScripts>
+    <AddUserInterfaces id="MCQianAgeBridge">
+      <Criteria>leaderPlayable</Criteria>
+      <Properties>
+        <Context>InGame</Context>
+      </Properties>
+      <File>UI/ModernChina_QianAgeBridge.xml</File>
+    </AddUserInterfaces>
+    <UpdateArt id="MCArt">
+      <Criteria>leaderPlayable</Criteria>
+      <File>ModernChinaArt.dep</File>
+    </UpdateArt>
+  </InGameActions>
+  <LocalizedText>
+    <Text id="LOC_MODERN_CHINA_MOD_TITLE">
+      <en_US>Modern China Civilization Pack</en_US>
+      <zh_Hans_CN>现代中国文明包</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_MODERN_CHINA_MOD_TEASER">
+      <en_US>New Civilization: Modern China, Leaders: Mao and Qian Xuesen</en_US>
+      <zh_Hans_CN>新文明「现代中国」，领袖「毛」与「钱学森」</zh_Hans_CN>
+    </Text>
+    <Text id="LOC_MODERN_CHINA_MOD_DESCRIPTION">
+      <en_US>Adds the Modern China civilization with Mao and Qian Xuesen, the Congress district, the Red Army unit, Qian's Mechanics Class, and the exclusive governor Zhu.</en_US>
+      <zh_Hans_CN>加入「现代中国」文明及其领袖毛、钱学森，包含特色区域「代表大会」、特色单位「红军」、钱学森的「力学班」以及专属总督「朱」。</zh_Hans_CN>
+    </Text>
+  </LocalizedText>
+  <Files>
+    <File>ModernChinaArt.dep</File>
+    <File>ArtDefs/Districts.artdef</File>
+    <File>ArtDefs/Units.artdef</File>
+    <File>ArtDefs/FallbackLeaders.artdef</File>
+    <File>Platforms/Windows/BLPs/LeaderFallbackImages.blp</File>
+    <File>Platforms/Windows/BLPs/QianLeaderFallback.blp</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>Platforms/Windows/BLPs/UI/QianUI.blp</File>
+    <File>Platforms/Windows/BLPs/UI/UI_Leaders.blp</File>
+    <File>Data/ModernChina_Config.xml</File>
+    <File>Data/ModernChina_Types.sql</File>
+    <File>Data/ModernChina_Civilization.sql</File>
+    <File>Data/ModernChina_Districts.xml</File>
+    <File>Data/ModernChina_Qian.xml</File>
+    <File>Data/ModernChina_Units.sql</File>
+    <File>Data/ModernChina_Projects.xml</File>
+    <File>Data/ModernChina_Leaders.sql</File>
+    <File>Data/ModernChina_Modifiers.xml</File>
+    <File>Data/ModernChina_WorkProjects.xml</File>
+    <File>Data/ModernChina_Generated.sql</File>
+    <File>Data/ModernChina_Governors.xml</File>
+    <File>Data/ModernChina_GovernorsGenerated.sql</File>
+    <File>Data/ModernChina_XP2.sql</File>
+    <File>Data/ModernChina_Icons.xml</File>
+    <File>Data/ModernChina_IconsGameplay.xml</File>
+    <File>Data/ModernChina_Colors.xml</File>
+    <File>Scripts/ModernChinaScript.lua</File>
+    <File>UI/ModernChina_QianAgeBridge.lua</File>
+    <File>UI/ModernChina_QianAgeBridge.xml</File>
+    <File>Text/ModernChina_Text_zh_Hans_CN.xml</File>
+    <File>Text/ModernChina_Text_en_US.xml</File>
+  </Files>
+</Mod>

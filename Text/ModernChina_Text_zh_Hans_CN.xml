@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <Row Language="zh_Hans_CN" Tag="LOC_CIVILIZATION_MODERN_CHINA_NAME" Text="现代中国"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CIVILIZATION_MODERN_CHINA_DESCRIPTION" Text="现代中国"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CIVILIZATION_MODERN_CHINA_ADJECTIVE" Text="中国的"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_MAO_NAME" Text="毛泽东"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_MAO_QUOTE" Text="星星之火，可以燎原。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LOADING_INFO_LEADER_MAO" Text="从南湖的红船到天安门的城楼，这片土地上的人民用几十年时间走完了别人几百年的路。代表大会的灯光彻夜不熄，工作重心的口号写满厂房与田野，红军的旗帜插上山巅——新的中国，正在被重新锻造。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_QIAN_XUESEN_NAME" Text="钱学森"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_QIAN_XUESEN_QUOTE" Text="我的事业在中国，我的成就在中国，我的归宿在中国。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LOADING_INFO_LEADER_QIAN_XUESEN" Text="从空气动力学到系统工程，钱学森把科学组织成国家能力。他相信时代的转折不只是命运的赐予，更是将全部可能性转化为工程路线的机会。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME" Text="中国化"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION" Text="尤里卡和鼓舞额外提供 10% 的科技和市政。当你清除蛮族营地、建立一条贸易路线，以及获得一座与原始首都不在同一大陆的城市时，获得一项随机的不高于当前所处时代的尤里卡或鼓舞。若获得的尤里卡或鼓舞已被触发，则直接解锁该项科技或市政。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_NAME" Text="再造中华"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_DESCRIPTION" Text="你的圣地和代表大会提供大量相邻加成，且建造时间减半。你每首次使用一个政体，奖励 1 点总督点数。你有总督的城市产出的生产力和文化翻倍。拥有专属特色总督「朱」。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="战略科学家"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="进入黄金时代时，获得当前时代所有尚未触发的尤里卡。进入黑暗时代时，获得当前时代所有尚未触发的鼓舞。进入英雄时代时，同时获得当前时代所有尚未触发的尤里卡与鼓舞。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="代表大会"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="现代中国独有区域，只有现代中国能够建造，替代该文明的市政广场；其他文明仍使用原版市政广场。由「国家劳动力」市政解锁。你的文明没有代表大会总数限制，但每座城市最多建造一座。除你文明的首座代表大会外，其他代表大会不能建造建筑，建成时不奖励总督点数，也不占用区域位。建成代表大会的城市可获得项目「工作重心」。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_UNIT_RED_ARMY_NAME" Text="红军"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_UNIT_RED_ARMY_DESCRIPTION" Text="现代中国特色的工业时代近战单位，替代线列步兵，由「启蒙运动」市政解锁。移动力 4（快于线列步兵）。拥有 1 次建造次数：可在相邻的山脉上修建一条穿山隧道，任何部队都能借助隧道翻越该山脉。你每拥有一种战略资源便获得 +2 战斗力，每与一个友方单位相邻 +1 战斗力。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_RED_ARMY_NAME" Text="穿山隧道"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_RED_ARMY_DESCRIPTION" Text="该单位拥有 1 次建造次数，可在相邻的山脉上修建穿山隧道。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME" Text="力学班"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION" Text="钱学森的特色建筑，替代研究实验室，由「工业化」解锁。+5 科技值。供电充足时额外 +10 科技值。+1 公民槽位，每回合 +2 大科学家点数。提供等同于学院区相邻科技加成的文化值。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_HOLY_SITE_ADJACENCY" Text="每相邻一个区域 +2 信仰"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_CONGRESS_ADJACENCY_PRODUCTION" Text="每相邻一个区域 +2 生产力"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_CONGRESS_ADJACENCY_CULTURE" Text="每相邻一个区域 +2 文化"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_ECONOMY_NAME" Text="工作重心—经济民生建设"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_ECONOMY_DESCRIPTION" Text="持续 20 回合。该城市的金币和食物产出 +15%。在该状态下，该城市每有一个区域及其建筑建成，+1 贸易路线容量。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_CULTURE_NAME" Text="工作重心—精神文明建设"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_CULTURE_DESCRIPTION" Text="持续 20 回合。该城市的文化和信仰产出 +15%。在该状态下，该城市每完成一个项目，有概率获得一件艺术品。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_TECH_NAME" Text="工作重心—科技创新"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_PROJECT_MC_WORK_TECH_DESCRIPTION" Text="持续 10 回合。该城市的科技和生产力产出 +30%。该城市每生产出一个非平民单位时，获得等同于该单位成本 20% 的伟人点数。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_NAME" Text="朱"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_TITLE" Text="红军元帅"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_SHORT_TITLE" Text="元帅"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="现代中国专属总督（3 回合部署）。左线军事、右线经济。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_NAME" Text="红军会师"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_DESCRIPTION" Text="若首次就位于该城市，获取一个「红军」。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_NAME" Text="游击敌后"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="该城市建造侦察类单位的速度 +75%。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_NAME" Text="根据地经济"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="该城市训练的建造者 +1 建造次数。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_NAME" Text="军民结合"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_DESCRIPTION" Text="该城市可以用信仰值购买军事单位。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_NAME" Text="军工建设"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="该城市的军营和工业区及其建筑建造速度 +50%。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_NAME" Text="混合经济"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="每条经过该城市的贸易路线 +2 金币、+2 食物、+1 生产力。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_AGENDA_MAO_NAME" Text="阶级斗争"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_AGENDA_MAO_DESCRIPTION" Text="喜欢与自己采用相同政体的文明，厌恶与自己政体不同的文明。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_TECH_BOOSTED" Text="中国化：获得一项尤里卡 — {1}"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_TECH_UNLOCKED" Text="中国化：尤里卡早已触发，直接解锁科技 — {1}"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_CIVIC_BOOSTED" Text="中国化：获得一项鼓舞 — {1}"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_CIVIC_UNLOCKED" Text="中国化：鼓舞早已触发，直接解锁市政 — {1}"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_CONGRESS_BUILT" Text="代表大会落成：获得 1 点总督点数"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_NEW_GOVERNMENT" Text="首次采用新政体：获得 1 点总督点数"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_RED_ARMY_JOINED" Text="红军会师：获得一个红军"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_NOTIFY_WORK_STARTED" Text="「{1}」开始，持续 {2} 回合"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_1" Text="北京"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_2" Text="上海"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_3" Text="广州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_4" Text="南京"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_5" Text="武汉"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_6" Text="西安"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_7" Text="重庆"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_8" Text="天津"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_9" Text="成都"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_10" Text="杭州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_11" Text="苏州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_12" Text="沈阳"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_13" Text="长春"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_14" Text="哈尔滨"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_15" Text="济南"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_16" Text="郑州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_17" Text="长沙"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_18" Text="昆明"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_19" Text="福州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_20" Text="厦门"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_21" Text="青岛"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_22" Text="大连"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_23" Text="太原"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_24" Text="兰州"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_25" Text="乌鲁木齐"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_26" Text="拉萨"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_27" Text="呼和浩特"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_28" Text="南宁"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_29" Text="贵阳"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_CITY_NAME_MC_30" Text="海口"/>
+  </LocalizedText>
+</GameData>

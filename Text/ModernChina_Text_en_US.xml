@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <Row Language="en_US" Tag="LOC_CIVILIZATION_MODERN_CHINA_NAME" Text="Modern China"/>
+    <Row Language="en_US" Tag="LOC_CIVILIZATION_MODERN_CHINA_DESCRIPTION" Text="Modern China"/>
+    <Row Language="en_US" Tag="LOC_CIVILIZATION_MODERN_CHINA_ADJECTIVE" Text="Chinese"/>
+
+    <Row Language="en_US" Tag="LOC_LEADER_MAO_NAME" Text="Mao Zedong"/>
+    <Row Language="en_US" Tag="LOC_LEADER_MAO_QUOTE" Text="A single spark can start a prairie fire."/>
+    <Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_MAO" Text="From a small boat on the lake to the tower above the square, the people of this land covered in decades what others took centuries to walk. The lights of the Congress never go out, the slogans of the Work Focus are painted across factories and fields, and the banner of the Red Army is planted on the peaks. A new China is being forged again."/>
+
+    <Row Language="en_US" Tag="LOC_LEADER_QIAN_XUESEN_NAME" Text="Qian Xuesen"/>
+    <Row Language="en_US" Tag="LOC_LEADER_QIAN_XUESEN_QUOTE" Text="My career is in China, my achievements are in China, and my home is China."/>
+    <Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_QIAN_XUESEN" Text="From aerodynamics to systems engineering, Qian Xuesen organized science into national capability. He saw the turning points of history not merely as gifts of fortune, but as opportunities to turn every possibility into an engineering program."/>
+
+    <Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME" Text="Sinicization"/>
+    <Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION" Text="Eurekas and Inspirations provide an additional 10% of Science and Culture. Clearing a Barbarian Camp, establishing a Trade Route, or gaining a city on a different continent from your original Capital grants one random Eureka or Inspiration from your current era or earlier. If that Eureka or Inspiration was already triggered, the Technology or Civic is unlocked directly."/>
+
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_NAME" Text="Rebuild China"/>
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_DESCRIPTION" Text="Your Holy Sites and Congress districts provide large adjacency bonuses and take half the time to build. Each time you adopt a government for the first time, gain 1 Governor title. Cities with a Governor produce double Production and Culture. You have the unique Governor Zhu."/>
+
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="Strategic Scientist"/>
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="When you enter a Golden Age, gain all untriggered Eurekas for the current era. When you enter a Dark Age, gain all untriggered Inspirations for the current era. When you enter a Heroic Age, gain both all untriggered Eurekas and Inspirations for the current era."/>
+
+    <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="Congress"/>
+    <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="A Modern China unique district that only Modern China can build, replacing its Government Plaza; every other civilization keeps the standard Government Plaza. Unlocked by State Workforce. Your civilization has no empire-wide limit on Congress districts, but each city may contain one. Every Congress after your civilization's first cannot hold buildings, grants no Governor title when completed, and does not count against the district capacity limit. A city with a Congress unlocks the Work Focus projects."/>
+
+    <Row Language="en_US" Tag="LOC_UNIT_RED_ARMY_NAME" Text="Red Army"/>
+    <Row Language="en_US" Tag="LOC_UNIT_RED_ARMY_DESCRIPTION" Text="A unique Industrial era melee unit that replaces the Line Infantry, unlocked by The Enlightenment. 4 Movement (faster than the Line Infantry). It has 1 build charge and can build a Mountain Tunnel on an adjacent Mountain tile, allowing any unit to cross that Mountain. +2 Combat Strength for each Strategic Resource you own, and +1 Combat Strength for each adjacent friendly unit."/>
+    <Row Language="en_US" Tag="LOC_ABILITY_RED_ARMY_NAME" Text="Mountain Tunnel"/>
+    <Row Language="en_US" Tag="LOC_ABILITY_RED_ARMY_DESCRIPTION" Text="This unit has 1 build charge and can build a Mountain Tunnel on an adjacent Mountain tile."/>
+
+    <Row Language="en_US" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME" Text="Mechanics Class"/>
+    <Row Language="en_US" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION" Text="Qian Xuesen's unique building, replacing the Research Lab and unlocked by Industrialization. +5 Science. When fully powered, +10 additional Science. +1 Citizen slot and +2 Great Scientist points per turn. Provides Culture equal to the Campus's Science adjacency bonus."/>
+
+    <Row Language="en_US" Tag="LOC_MC_HOLY_SITE_ADJACENCY" Text="+2 Faith for each adjacent district"/>
+    <Row Language="en_US" Tag="LOC_MC_CONGRESS_ADJACENCY_PRODUCTION" Text="+2 Production for each adjacent district"/>
+    <Row Language="en_US" Tag="LOC_MC_CONGRESS_ADJACENCY_CULTURE" Text="+2 Culture for each adjacent district"/>
+
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_ECONOMY_NAME" Text="Work Focus: Economic Development"/>
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_ECONOMY_DESCRIPTION" Text="Lasts 20 turns. +15% Gold and Food in this city. While active, each district and building completed in this city grants +1 Trade Route capacity."/>
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_CULTURE_NAME" Text="Work Focus: Spiritual Civilization"/>
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_CULTURE_DESCRIPTION" Text="Lasts 20 turns. +15% Culture and Faith in this city. While active, each completed project has a chance to grant a Great Work of Art."/>
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_TECH_NAME" Text="Work Focus: Scientific Innovation"/>
+    <Row Language="en_US" Tag="LOC_PROJECT_MC_WORK_TECH_DESCRIPTION" Text="Lasts 10 turns. +30% Science and Production in this city. Each non-civilian unit produced in this city grants Great Person points equal to 20% of its cost."/>
+
+    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_NAME" Text="Zhu"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_TITLE" Text="Marshal of the Red Army"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_SHORT_TITLE" Text="Marshal"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="Unique Modern China Governor (3 turns to establish). Military line on the left, economic line on the right."/>
+
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_NAME" Text="Red Army Rendezvous"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_DESCRIPTION" Text="When first established in this city, gain a Red Army unit."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_NAME" Text="Guerrilla Behind the Lines"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="+75% Production toward Recon units in this city."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_NAME" Text="Base Area Economy"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="Builders trained in this city gain +1 build charge."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_NAME" Text="Army and People Together"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_DESCRIPTION" Text="Military units can be purchased with Faith in this city."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_NAME" Text="Military Industry"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="+50% Production toward Encampments, Industrial Zones and their buildings in this city."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_NAME" Text="Mixed Economy"/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="Trade Routes passing through this city provide +2 Gold, +2 Food and +1 Production."/>
+
+    <Row Language="en_US" Tag="LOC_AGENDA_MAO_NAME" Text="Class Struggle"/>
+    <Row Language="en_US" Tag="LOC_AGENDA_MAO_DESCRIPTION" Text="Likes civilizations that share his government, dislikes those that do not."/>
+
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_TECH_BOOSTED" Text="Sinicization: Eureka gained — {1}"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_TECH_UNLOCKED" Text="Sinicization: Eureka already triggered, Technology unlocked — {1}"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_CIVIC_BOOSTED" Text="Sinicization: Inspiration gained — {1}"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_CIVIC_UNLOCKED" Text="Sinicization: Inspiration already triggered, Civic unlocked — {1}"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_CONGRESS_BUILT" Text="Congress completed: gained 1 Governor title"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_NEW_GOVERNMENT" Text="First time adopting this government: gained 1 Governor title"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_RED_ARMY_JOINED" Text="Red Army Rendezvous: gained a Red Army unit"/>
+    <Row Language="en_US" Tag="LOC_MC_NOTIFY_WORK_STARTED" Text="&quot;{1}&quot; started, lasting {2} turns"/>
+
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_1" Text="Beijing"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_2" Text="Shanghai"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_3" Text="Guangzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_4" Text="Nanjing"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_5" Text="Wuhan"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_6" Text="Xi'an"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_7" Text="Chongqing"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_8" Text="Tianjin"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_9" Text="Chengdu"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_10" Text="Hangzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_11" Text="Suzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_12" Text="Shenyang"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_13" Text="Changchun"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_14" Text="Harbin"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_15" Text="Jinan"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_16" Text="Zhengzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_17" Text="Changsha"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_18" Text="Kunming"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_19" Text="Fuzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_20" Text="Xiamen"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_21" Text="Qingdao"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_22" Text="Dalian"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_23" Text="Taiyuan"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_24" Text="Lanzhou"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_25" Text="Urumqi"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_26" Text="Lhasa"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_27" Text="Hohhot"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_28" Text="Nanning"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_29" Text="Guiyang"/>
+    <Row Language="en_US" Tag="LOC_CITY_NAME_MC_30" Text="Haikou"/>
+  </LocalizedText>
+</GameData>

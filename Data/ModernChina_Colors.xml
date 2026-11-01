@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <Colors>
+    <Row Type="COLOR_MC_RED"    COLOR="176,24,36,255"/>
+    <Row Type="COLOR_MC_RED_DK" COLOR="122,14,24,255"/>
+    <Row Type="COLOR_MC_GOLD"   COLOR="244,206,84,255"/>
+  </Colors>
+  <PlayerColors>
+    <Row>
+      <Type>LEADER_MAO</Type>
+      <Usage>Unique</Usage>
+      <PrimaryColor>COLOR_MC_RED</PrimaryColor>
+      <SecondaryColor>COLOR_MC_GOLD</SecondaryColor>
+      <Alt1PrimaryColor>COLOR_STANDARD_RED_MD</Alt1PrimaryColor>
+      <Alt1SecondaryColor>COLOR_STANDARD_WHITE_LT</Alt1SecondaryColor>
+      <Alt2PrimaryColor>COLOR_STANDARD_RED_DK</Alt2PrimaryColor>
+      <Alt2SecondaryColor>COLOR_STANDARD_YELLOW_MD</Alt2SecondaryColor>
+      <Alt3PrimaryColor>COLOR_STANDARD_ORANGE_MD</Alt3PrimaryColor>
+      <Alt3SecondaryColor>COLOR_STANDARD_WHITE_DK</Alt3SecondaryColor>
+    </Row>
+    <Row>
+      <Type>LEADER_QIAN_XUESEN</Type>
+      <Usage>Unique</Usage>
+      <PrimaryColor>COLOR_STANDARD_BLUE_MD</PrimaryColor>
+      <SecondaryColor>COLOR_STANDARD_WHITE_LT</SecondaryColor>
+      <Alt1PrimaryColor>COLOR_MC_GOLD</Alt1PrimaryColor>
+      <Alt1SecondaryColor>COLOR_STANDARD_BLUE_DK</Alt1SecondaryColor>
+      <Alt2PrimaryColor>COLOR_STANDARD_BLUE_DK</Alt2PrimaryColor>
+      <Alt2SecondaryColor>COLOR_STANDARD_WHITE_MD</Alt2SecondaryColor>
+      <Alt3PrimaryColor>COLOR_STANDARD_WHITE_MD2</Alt3PrimaryColor>
+      <Alt3SecondaryColor>COLOR_STANDARD_BLUE_MD</Alt3SecondaryColor>
+    </Row>
+  </PlayerColors>
+</GameData>

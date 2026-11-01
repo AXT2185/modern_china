@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =============================================================
+     现代中国 : 「工作重心」状态用的城市级增益
+     到期通过等量的反向 modifier 抵消（引擎无法移除 modifier）
+     ============================================================= -->
+<GameData>
+
+  <Modifiers>
+    <!-- 经济民生建设：金币 / 食物 +15% -->
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+
+    <!-- 精神文明建设：文化 / 信仰 +15% -->
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+
+    <!-- 科技创新：科技 / 生产力 +30% -->
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_UP</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_DOWN</ModifierId><ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType></Row>
+
+    <!-- 经济民生建设状态内的区域/建筑建成奖励 -->
+    <Row><ModifierId>MC_WORK_ADD_TRADE_CAPACITY</ModifierId><ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType></Row>
+
+    <!-- 精神文明建设状态内的「艺术品」奖励（以遗物实现） -->
+    <Row><ModifierId>MC_WORK_GRANT_RELIC</ModifierId><ModifierType>MODIFIER_PLAYER_GRANT_RELIC</ModifierType></Row>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_UP</ModifierId><Name>YieldType</Name><Value>YIELD_GOLD</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_UP</ModifierId><Name>Amount</Name><Value>15</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_UP</ModifierId><Name>YieldType</Name><Value>YIELD_FOOD</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_UP</ModifierId><Name>Amount</Name><Value>15</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_GOLD</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_GOLD_DOWN</ModifierId><Name>Amount</Name><Value>-15</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_FOOD</Value></Row>
+    <Row><ModifierId>MC_WORK_ECONOMY_FOOD_DOWN</ModifierId><Name>Amount</Name><Value>-15</Value></Row>
+
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_UP</ModifierId><Name>YieldType</Name><Value>YIELD_CULTURE</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_UP</ModifierId><Name>Amount</Name><Value>15</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_UP</ModifierId><Name>YieldType</Name><Value>YIELD_FAITH</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_UP</ModifierId><Name>Amount</Name><Value>15</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_CULTURE</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_CULTURE_DOWN</ModifierId><Name>Amount</Name><Value>-15</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_FAITH</Value></Row>
+    <Row><ModifierId>MC_WORK_CULTURE_FAITH_DOWN</ModifierId><Name>Amount</Name><Value>-15</Value></Row>
+
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_UP</ModifierId><Name>YieldType</Name><Value>YIELD_SCIENCE</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_UP</ModifierId><Name>Amount</Name><Value>30</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_UP</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_UP</ModifierId><Name>Amount</Name><Value>30</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_SCIENCE</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_SCIENCE_DOWN</ModifierId><Name>Amount</Name><Value>-30</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_DOWN</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_WORK_TECH_PRODUCTION_DOWN</ModifierId><Name>Amount</Name><Value>-30</Value></Row>
+
+    <Row><ModifierId>MC_WORK_ADD_TRADE_CAPACITY</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+
+    <Row><ModifierId>MC_WORK_GRANT_RELIC</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_WORK_GRANT_RELIC</ModifierId><Name>RelicSource</Name><Value>RELIC_SOURCE_TRIBAL_VILLAGE</Value></Row>
+  </ModifierArguments>
+
+</GameData>

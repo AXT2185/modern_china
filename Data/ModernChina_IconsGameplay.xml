@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =============================================================
+     现代中国 : 游戏内图标补充（仅游戏内加载）
+     别名统一放在 ModernChina_Icons.xml 里，这里只放项目图标
+     ============================================================= -->
+<GameData>
+  <IconDefinitions>
+    <Row Name="ICON_PROJECT_MC_WORK_ECONOMY" Atlas="ICON_ATLAS_PROJECTS" Index="10"/>
+    <Row Name="ICON_PROJECT_MC_WORK_CULTURE" Atlas="ICON_ATLAS_PROJECTS" Index="11"/>
+    <Row Name="ICON_PROJECT_MC_WORK_TECH"    Atlas="ICON_ATLAS_PROJECTS" Index="12"/>
+  </IconDefinitions>
+</GameData>

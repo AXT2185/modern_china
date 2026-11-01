@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- UI carrier for the Qian age bridge. The same-named Lua file performs the work. -->
+<Context>
+  <Label ID="ModernChina_QianAgeBridgeMarker"
+         Anchor="L,T" Offset="0,0"
+         Style="FontNormal14" String=" " Hidden="1"/>
+</Context>

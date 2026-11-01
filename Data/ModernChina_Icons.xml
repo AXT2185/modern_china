@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =============================================================
+     现代中国 : 自定义图标（前端 + 游戏内都会加载）
+     只包含自建 Atlas / Definition，避免引用尚未加载的 DLC 图标
+     ============================================================= -->
+<GameData>
+
+  <IconTextureAtlases>
+    <!-- 文明徽章：素材 = 文明图标_<size>.dds -->
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_256.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="200" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_200.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="128" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_128.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_80.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_64.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_50.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_48.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_45.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="44" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_44.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="36" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_36.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_32.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="30" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_30.dds"/>
+    <Row Name="ICON_ATLAS_MC_CIV" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="EMBLEM_MODERN_CHINA_22.dds"/>
+
+    <!-- 领袖头像：素材 = 毛领袖图_<size>.dds -->
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_256.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_80.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_64.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_55.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_50.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_48.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_45.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_MAO_ICON_32.dds"/>
+
+    <!-- 钱学森圆形头像：独立图集，避免覆盖毛的头像 -->
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_256.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_80.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_64.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_55.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_50.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_48.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_45.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_32.dds"/>
+
+    <!-- 总督徽章：素材 = 朱_总督<size>.dds -->
+    <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors256.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="128" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors128.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors64.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors32.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors22.dds"/>
+
+    <Row Name="ICON_ATLAS_MC_GOVERNORS_FILL" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="MC_GovernorsFill32.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS_FILL" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="MC_GovernorsFill22.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS_SLOT" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="MC_GovernorsSlot32.dds"/>
+    <Row Name="ICON_ATLAS_MC_GOVERNORS_SLOT" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="MC_GovernorsSlot22.dds"/>
+
+    <Row Name="ICON_ATLAS_MC_GOVERNOR_PROMOTIONS" IconSize="24" IconsPerRow="1" IconsPerColumn="1" Filename="MC_GovernorPromotions24.dds"/>
+  </IconTextureAtlases>
+
+  <IconDefinitions>
+    <Row Name="ICON_CIVILIZATION_MODERN_CHINA" Atlas="ICON_ATLAS_MC_CIV" Index="0"/>
+    <Row Name="ICON_LEADER_MAO"                Atlas="ICON_ATLAS_MC_LEADER" Index="0"/>
+    <Row Name="ICON_LEADER_QIAN_XUESEN"       Atlas="ICON_ATLAS_MC_LEADER_QIAN" Index="0"/>
+
+    <Row Name="ICON_GOVERNOR_ZHU"            Atlas="ICON_ATLAS_MC_GOVERNORS" Index="0"/>
+    <Row Name="ICON_GOVERNOR_ZHU_FILL"       Atlas="ICON_ATLAS_MC_GOVERNORS_FILL" Index="0"/>
+    <Row Name="ICON_GOVERNOR_ZHU_SLOT"       Atlas="ICON_ATLAS_MC_GOVERNORS_SLOT" Index="0"/>
+    <Row Name="ICON_GOVERNOR_ZHU_PROMOTION"  Atlas="ICON_ATLAS_MC_GOVERNOR_PROMOTIONS" Index="0"/>
+  </IconDefinitions>
+
+  <!-- 前端 + 游戏内都要能解析的图标别名（选择界面的 PlayerItems 也会用到） -->
+  <IconAliases>
+    <Row Name="ICON_DISTRICT_CONGRESS"      OtherName="ICON_DISTRICT_GOVERNMENT"/>
+    <Row Name="ICON_DISTRICT_CONGRESS_FOW"  OtherName="ICON_DISTRICT_GOVERNMENT_FOW"/>
+    <Row Name="ICON_UNIT_RED_ARMY"          OtherName="ICON_UNIT_LINE_INFANTRY"/>
+    <Row Name="ICON_UNIT_RED_ARMY_FOW"      OtherName="ICON_UNIT_LINE_INFANTRY_FOW"/>
+    <Row Name="ICON_UNIT_RED_ARMY_PORTRAIT" OtherName="ICON_UNIT_LINE_INFANTRY_PORTRAIT"/>
+    <Row Name="ICON_UNIT_RED_ARMY_WHITE"    OtherName="ICON_UNIT_LINE_INFANTRY_WHITE"/>
+    <Row Name="ICON_UNIT_RED_ARMY_BLACK"    OtherName="ICON_UNIT_LINE_INFANTRY_BLACK"/>
+    <Row Name="ICON_BUILDING_QIAN_MECHANICS_CLASS"      OtherName="ICON_BUILDING_RESEARCH_LAB"/>
+    <Row Name="ICON_BUILDING_QIAN_MECHANICS_CLASS_FOW"  OtherName="ICON_BUILDING_RESEARCH_LAB_FOW"/>
+  </IconAliases>
+
+</GameData>
