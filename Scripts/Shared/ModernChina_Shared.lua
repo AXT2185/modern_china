@@ -2,25 +2,16 @@
 -- 现代中国 (Modern China) — 游戏内脚本
 --   1. 中国化：清蛮族营地 / 建贸易路线 / 新大陆城市 → 随机尤里卡或鼓舞
 --   2. 代表大会：本局首次建成 → +1 总督点数
---   3. 毛「再造中华」：每首次使用一个政体 → +1 总督点数
---   4. 总督「朱」：红军会师（首次就位 → 获得一个红军）
---   5. 工作重心项目：限时城市增益 + 状态内的触发效果
+--   3. 工作重心项目：限时城市增益 + 状态内的触发效果
 --
 -- 调试：Lua.log 里搜 [ModernChina]，每回合都会打印一行健康信息
 -- ============================================================
 
 local CIV_TYPE       = 'CIVILIZATION_MODERN_CHINA'
-local LEADER_TYPE    = 'LEADER_MAO'
-local QIAN_LEADER    = 'LEADER_QIAN_XUESEN'
-local GOV_ZHU        = 'GOVERNOR_ZHU'
 local DIST_CONGRESS  = 'DISTRICT_CONGRESS'
-local UNIT_RED_ARMY  = 'UNIT_RED_ARMY'
 local IMP_CAMP       = 'IMPROVEMENT_BARBARIAN_CAMP'
 
-local KEY_USED_GOV   = 'MC_USED_GOVERNMENTS'
 local KEY_CONGRESS   = 'MC_CONGRESS_DONE'
-local KEY_QIAN_AGE   = 'MC_QIAN_AGE_REWARD'
-local g_qianBridgeAge = {}
 
 local WORK = {
     PROJECT_MC_WORK_ECONOMY = {
@@ -57,16 +48,6 @@ end
 local function IsModernChina(pid)
     local cfg = pid ~= nil and PlayerConfigurations[pid]
     return cfg ~= nil and cfg:GetCivilizationTypeName() == CIV_TYPE
-end
-
-local function IsMao(pid)
-    local cfg = pid ~= nil and PlayerConfigurations[pid]
-    return cfg ~= nil and cfg:GetLeaderTypeName() == LEADER_TYPE
-end
-
-local function IsQian(pid)
-    local cfg = pid ~= nil and PlayerConfigurations[pid]
-    return cfg ~= nil and cfg:GetLeaderTypeName() == QIAN_LEADER
 end
 
 local function FindRow(collection, field, value)
@@ -128,17 +109,6 @@ local function ResolveProjectType(projectID)
     return nil
 end
 
-local function ResolveGovernorType(governorType)
-    if governorType == nil then return nil end
-    if type(governorType) == 'string' then return governorType end
-    for row in GameInfo.Governors() do
-        if row.Index == governorType then return row.GovernorType end
-    end
-    local row = GameInfo.Governors[governorType]
-    if row ~= nil then return row.GovernorType end
-    return nil
-end
-
 -- ============================================================
 -- 中国化：随机尤里卡 / 鼓舞
 -- ============================================================
@@ -196,7 +166,7 @@ function MC_GiveRandomBoost(pid, iSource)
     Log(string.format('give random boost: pid=%d era=%d pool=%d', pid, maxEra, #pool))
     if #pool == 0 then return false end
 
-    local pick = pool[math.random(#pool)]
+    local pick = pool[Game.GetRandNum(#pool, 'ModernChinaRandomBoost') + 1]
     local itemName = Locale.Lookup(pick.name)
     local src = iSource or BoostSource()
 
@@ -419,59 +389,6 @@ local function CheckCongress(pid)
 end
 
 -- ============================================================
--- 政体：毛「再造中华」
--- ============================================================
-
-local function GovUsed(pPlayer, govID)
-    local s = Prop(pPlayer, KEY_USED_GOV, '|')
-    return string.find(s, '|' .. tostring(govID) .. '|', 1, true) ~= nil
-end
-
-local function MarkGovUsed(pPlayer, govID)
-    local s = Prop(pPlayer, KEY_USED_GOV, '|')
-    if string.find(s, '|' .. tostring(govID) .. '|', 1, true) == nil then
-        pPlayer:SetProperty(KEY_USED_GOV, s .. tostring(govID) .. '|')
-    end
-end
-
-local function OnGovernmentChanged(pid, govID)
-    if not IsModernChina(pid) or not IsMao(pid) then return end
-    if govID == nil then return end
-    local pPlayer = Players[pid]
-    if pPlayer == nil then return end
-    Log(string.format('government changed pid=%d gov=%s', pid, tostring(govID)))
-    if GovUsed(pPlayer, govID) then return end
-    MarkGovUsed(pPlayer, govID)
-    Safe(function() pPlayer:GetGovernors():ChangeGovernorPoints(1) end)
-    Notify(pid, Locale.Lookup('LOC_MC_NOTIFY_NEW_GOVERNMENT'))
-end
-
--- ============================================================
--- 总督「朱」：红军会师
--- ============================================================
-
-local function OnGovernorAssigned(cityOwner, cityID, governorOwner, governorType)
-    if ResolveGovernorType(governorType) ~= GOV_ZHU then return end
-    if cityOwner == nil or not IsModernChina(cityOwner) then return end
-    local pPlayer = Players[cityOwner]
-    if pPlayer == nil then return end
-    local city = pPlayer:GetCities():FindID(cityID)
-    if city == nil then return end
-
-    local key = 'MC_ZHU_ARRIVED_' .. tostring(cityID)
-    if Prop(city, key, false) then return end
-    city:SetProperty(key, true)
-
-    local unitRow = FindRow(GameInfo.Units, 'UnitType', UNIT_RED_ARMY)
-    if unitRow == nil then return end
-    local unit = pPlayer:GetUnits():Create(unitRow.Index, city:GetX(), city:GetY())
-    if unit ~= nil then
-        Log('Zhu arrived at city ' .. tostring(city:GetName()) .. ' -> spawn Red Army')
-        Notify(cityOwner, Locale.Lookup('LOC_MC_NOTIFY_RED_ARMY_JOINED'))
-    end
-end
-
--- ============================================================
 -- 工作重心
 -- ============================================================
 
@@ -513,7 +430,8 @@ local function OnCityProjectCompleted(pid, cityID, projectID)
     Log(string.format('project completed pid=%d city=%s project=%s', pid, tostring(city:GetName()), tostring(projectType)))
 
     local cultureEnd = Prop(city, BuffKey('CULTURE', 'END'), -1)
-    if cultureEnd >= 0 and MCGetTurn() <= cultureEnd and math.random(100) <= 25 then
+    if cultureEnd >= 0 and MCGetTurn() <= cultureEnd
+        and Game.GetRandNum(100, 'ModernChinaProjectArt') < 25 then
         Safe(function() pPlayer:AttachModifierByID('MC_WORK_GRANT_RELIC') end)
     end
 
@@ -581,102 +499,6 @@ local function OnUnitCreated(pid, unitID, unitType)
 end
 
 -- ============================================================
--- 钱学森「战略科学家」：时代开始时授予当前时代全部对应加成
--- ============================================================
-
-local function CurrentEraType()
-    local eras = Game.GetEras()
-    if eras == nil then return nil end
-    local eraIndex = eras:GetCurrentEra()
-    local eraRow = GameInfo.Eras[eraIndex]
-    if eraRow == nil then
-        for row in GameInfo.Eras() do
-            if row.Index == eraIndex then
-                eraRow = row
-                break
-            end
-        end
-    end
-    return eraRow and eraRow.EraType or nil
-end
-
-local function GrantQianAgeRewards(pid, ageKind)
-    if not IsQian(pid) then return false end
-    local pPlayer = Players[pid]
-    if pPlayer == nil then return false end
-
-    ageKind = tostring(ageKind or ''):upper()
-    if ageKind ~= 'GOLDEN'
-        and ageKind ~= 'DARK'
-        and ageKind ~= 'HEROIC' then
-        return false
-    end
-    g_qianBridgeAge[pid] = ageKind
-
-    local eraType = CurrentEraType()
-    if eraType == nil then
-        Log('Qian age reward skipped: current era type unavailable')
-        return false
-    end
-
-    local signature = tostring(Game.GetEras():GetCurrentEra()) .. ':' .. ageKind
-    if Prop(pPlayer, KEY_QIAN_AGE, '') == signature then return false end
-
-    InitBoostData()
-    local pTechs = pPlayer:GetTechs()
-    local pCulture = pPlayer:GetCulture()
-    local source = BoostSource()
-    local techCount, civicCount = 0, 0
-
-    if ageKind ~= 'DARK' then
-        for row in GameInfo.Technologies() do
-            if row.EraType == eraType
-                and g_techBoosts[row.TechnologyType]
-                and not pTechs:HasTech(row.Index)
-                and not pTechs:HasBoostBeenTriggered(row.Index) then
-                if Safe(function() pTechs:TriggerBoost(row.Index, source) end) then
-                    techCount = techCount + 1
-                end
-            end
-        end
-    end
-
-    if ageKind ~= 'GOLDEN' then
-        for row in GameInfo.Civics() do
-            if row.EraType == eraType
-                and g_civicBoosts[row.CivicType]
-                and not pCulture:HasCivic(row.Index)
-                and not pCulture:HasBoostBeenTriggered(row.Index) then
-                if Safe(function() pCulture:TriggerBoost(row.Index, source) end) then
-                    civicCount = civicCount + 1
-                end
-            end
-        end
-    end
-
-    pPlayer:SetProperty(KEY_QIAN_AGE, signature)
-    Log(string.format('Qian age reward: pid=%d era=%s age=%s tech=%d civic=%d',
-        pid, tostring(eraType), tostring(ageKind), techCount, civicCount))
-    return true
-end
-
-local function RegisterQianAgeBridge()
-    local shared = ExposedMembers
-    if type(shared) ~= 'table' then return end
-    if type(shared.ModernChina) ~= 'table' then
-        shared.ModernChina = {}
-    end
-    shared.ModernChina.ApplyQianAge = function(pid, age)
-        return GrantQianAgeRewards(pid, age)
-    end
-    -- Let the UI event channel call gameplay code even if direct exposure is unavailable.
-    shared.GameEvents = GameEvents
-    GameEvents.MC_QianAgeUpdate.Add(function(pid, age)
-        GrantQianAgeRewards(pid, age)
-    end)
-end
-
--- ============================================================
 -- 主循环
 -- ============================================================
 
@@ -698,23 +520,13 @@ local function OnGameTurnStarted(turn)
             Log(string.format('tick turn=%s pid=%d camps=%d routes=%s congress=%d',
                 tostring(turn), pid, camps, tostring(routes), congress))
         end
-        if IsQian(pid) then
-            local age = g_qianBridgeAge[pid]
-            if age ~= nil then
-                Safe(function() GrantQianAgeRewards(pid, age) end)
-            end
-        end
     end
 end
 
 local function Initialize()
     Log('=== script loading ===')
-    Safe(function() math.randomseed(MCGetTurn() * 7919 + 13) end)
     Safe(InitBoostData)
-    Safe(RegisterQianAgeBridge)
     Safe(function() GameEvents.OnGameTurnStarted.Add(OnGameTurnStarted) end)
-    Safe(function() Events.GovernmentChanged.Add(function(a, b) Safe(OnGovernmentChanged, a, b) end) end)
-    Safe(function() Events.GovernorAssigned.Add(function(a, b, c, d) Safe(OnGovernorAssigned, a, b, c, d) end) end)
     Safe(function() Events.CityProjectCompleted.Add(function(a, b, c) Safe(OnCityProjectCompleted, a, b, c) end) end)
     Safe(function() GameEvents.UnitCreated.Add(function(a, b, c) Safe(OnUnitCreated, a, b, c) end) end)
     Safe(function() Events.ImprovementRemovedFromMap.Add(function(a, b, c) Safe(OnImprovementRemoved, a, b, c) end) end)

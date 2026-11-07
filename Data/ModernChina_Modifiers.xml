@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- =============================================================
-     现代中国 : 文明 / 领袖 / 单位能力 的 Modifier 与 Requirement
+     现代中国 : 文明 / 单位能力 的 Modifier 与 Requirement
      ============================================================= -->
 <GameData>
 
@@ -28,135 +28,13 @@
     </Row>
   </ModifierArguments>
 
-  <!-- ============ 领袖能力「再造中华」 ============ -->
-  <Modifiers>
-    <!-- 圣地相邻加成 -->
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
-    </Row>
-    <!-- 代表大会相邻加成 -->
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
-    </Row>
-    <!-- 圣地建造时间减半（+100% 生产力） -->
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
-    </Row>
-    <!-- 有总督的城市：生产力 / 文化 翻倍 -->
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_GOVERNOR</SubjectRequirementSetId>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId>
-      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_GOVERNOR</SubjectRequirementSetId>
-    </Row>
-  </Modifiers>
-  <ModifierArguments>
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
-      <Name>DistrictType</Name>
-      <Value>DISTRICT_HOLY_SITE</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
-      <Name>YieldType</Name>
-      <Value>YIELD_FAITH</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
-      <Name>Amount</Name>
-      <Value>2</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
-      <Name>Description</Name>
-      <Value>LOC_MC_HOLY_SITE_ADJACENCY</Value>
-    </Row>
+  <TraitModifiers>
+    <Row><TraitType>TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS</TraitType><ModifierId>MC_BOOST_TECHNOLOGY_10</ModifierId></Row>
+    <Row><TraitType>TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS</TraitType><ModifierId>MC_BOOST_CIVIC_10</ModifierId></Row>
+  </TraitModifiers>
 
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
-      <Name>DistrictType</Name>
-      <Value>DISTRICT_CONGRESS</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
-      <Name>YieldType</Name>
-      <Value>YIELD_PRODUCTION</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
-      <Name>Amount</Name>
-      <Value>2</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
-      <Name>Description</Name>
-      <Value>LOC_MC_CONGRESS_ADJACENCY_PRODUCTION</Value>
-    </Row>
-
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
-      <Name>DistrictType</Name>
-      <Value>DISTRICT_CONGRESS</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
-      <Name>YieldType</Name>
-      <Value>YIELD_CULTURE</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
-      <Name>Amount</Name>
-      <Value>2</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
-      <Name>Description</Name>
-      <Value>LOC_MC_CONGRESS_ADJACENCY_CULTURE</Value>
-    </Row>
-
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId>
-      <Name>DistrictType</Name>
-      <Value>DISTRICT_HOLY_SITE</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId>
-      <Name>Amount</Name>
-      <Value>100</Value>
-    </Row>
-
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId>
-      <Name>YieldType</Name>
-      <Value>YIELD_PRODUCTION</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId>
-      <Name>Amount</Name>
-      <Value>100</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId>
-      <Name>YieldType</Name>
-      <Value>YIELD_CULTURE</Value>
-    </Row>
-    <Row>
-      <ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId>
-      <Name>Amount</Name>
-      <Value>100</Value>
-    </Row>
-  </ModifierArguments>
+  <!-- Mao-specific modifiers and Zhu's governor effects live in
+       Data/Leaders/Mao/ModernChina_Mao.xml. -->
 
   <!-- ============ 红军：跨越山脉 + 相邻友军支援加成 ============ -->
   <Modifiers>

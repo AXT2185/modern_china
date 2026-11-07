@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="5">
+<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="6">
   <Properties>
     <Name>LOC_MODERN_CHINA_MOD_TITLE</Name>
     <Description>LOC_MODERN_CHINA_MOD_DESCRIPTION</Description>
@@ -42,28 +42,35 @@
     </UpdateArt>
   </FrontEndActions>
   <InGameActions>
+    <UpdateDatabase id="MCDatabase_Types">
+      <Criteria>leaderPlayable</Criteria>
+      <Properties><LoadOrder>-1</LoadOrder></Properties>
+      <File>Data/ModernChina_Types.sql</File>
+    </UpdateDatabase>
     <UpdateDatabase id="MCDatabase">
       <Criteria>leaderPlayable</Criteria>
-      <File>Data/ModernChina_Types.sql</File>
-      <File>Data/ModernChina_Civilization.sql</File>
-      <File>Data/ModernChina_Districts.xml</File>
-      <File>Data/ModernChina_Qian.xml</File>
-      <File>Data/ModernChina_Units.sql</File>
-      <File>Data/ModernChina_Projects.xml</File>
-      <File>Data/ModernChina_Leaders.sql</File>
-      <File>Data/ModernChina_Modifiers.xml</File>
-      <File>Data/ModernChina_WorkProjects.xml</File>
-      <File>Data/ModernChina_Generated.sql</File>
+      <Properties><LoadOrder>0</LoadOrder></Properties>
+      <File Priority="100">Data/ModernChina_Civilization.sql</File>
+      <File Priority="90">Data/ModernChina_Districts.xml</File>
+      <File Priority="90">Data/ModernChina_Units.sql</File>
+      <File Priority="90">Data/ModernChina_Projects.xml</File>
+      <File Priority="90">Data/ModernChina_WorkProjects.xml</File>
+      <File Priority="80">Data/Leaders/ModernChina_LeaderRegistry.sql</File>
+      <File Priority="75">Data/ModernChina_Modifiers.xml</File>
+      <File Priority="70">Data/ModernChina_Generated.sql</File>
+      <File Priority="60">Data/Leaders/Mao/ModernChina_Mao.xml</File>
+      <File Priority="60">Data/Leaders/Qian/ModernChina_Qian.xml</File>
     </UpdateDatabase>
     <UpdateDatabase id="MCDatabase_Governors">
       <Criteria>leaderPlayable</Criteria>
       <Criteria>Expansion1</Criteria>
-      <File>Data/ModernChina_Governors.xml</File>
-      <File>Data/ModernChina_GovernorsGenerated.sql</File>
+      <Properties><LoadOrder>10</LoadOrder></Properties>
+      <File>Data/Leaders/Mao/ModernChina_ZhuGenerated.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="MCDatabase_XP2">
       <Criteria>leaderPlayable</Criteria>
       <Criteria>Expansion2</Criteria>
+      <Properties><LoadOrder>20</LoadOrder></Properties>
       <File>Data/ModernChina_XP2.sql</File>
     </UpdateDatabase>
     <UpdateIcons id="MCIcons">
@@ -82,7 +89,9 @@
     </UpdateColors>
     <AddGameplayScripts id="MCScripts">
       <Criteria>leaderPlayable</Criteria>
-      <File>Scripts/ModernChinaScript.lua</File>
+      <File>Scripts/Shared/ModernChina_Shared.lua</File>
+      <File>Scripts/Leaders/Mao/ModernChina_Mao.lua</File>
+      <File>Scripts/Leaders/Qian/ModernChina_Qian.lua</File>
     </AddGameplayScripts>
     <AddUserInterfaces id="MCQianAgeBridge">
       <Criteria>leaderPlayable</Criteria>
@@ -124,20 +133,22 @@
     <File>Data/ModernChina_Types.sql</File>
     <File>Data/ModernChina_Civilization.sql</File>
     <File>Data/ModernChina_Districts.xml</File>
-    <File>Data/ModernChina_Qian.xml</File>
     <File>Data/ModernChina_Units.sql</File>
     <File>Data/ModernChina_Projects.xml</File>
-    <File>Data/ModernChina_Leaders.sql</File>
+    <File>Data/Leaders/ModernChina_LeaderRegistry.sql</File>
+    <File>Data/Leaders/Mao/ModernChina_Mao.xml</File>
+    <File>Data/Leaders/Mao/ModernChina_ZhuGenerated.sql</File>
+    <File>Data/Leaders/Qian/ModernChina_Qian.xml</File>
     <File>Data/ModernChina_Modifiers.xml</File>
     <File>Data/ModernChina_WorkProjects.xml</File>
     <File>Data/ModernChina_Generated.sql</File>
-    <File>Data/ModernChina_Governors.xml</File>
-    <File>Data/ModernChina_GovernorsGenerated.sql</File>
     <File>Data/ModernChina_XP2.sql</File>
     <File>Data/ModernChina_Icons.xml</File>
     <File>Data/ModernChina_IconsGameplay.xml</File>
     <File>Data/ModernChina_Colors.xml</File>
-    <File>Scripts/ModernChinaScript.lua</File>
+    <File>Scripts/Shared/ModernChina_Shared.lua</File>
+    <File>Scripts/Leaders/Mao/ModernChina_Mao.lua</File>
+    <File>Scripts/Leaders/Qian/ModernChina_Qian.lua</File>
     <File>UI/ModernChina_QianAgeBridge.lua</File>
     <File>UI/ModernChina_QianAgeBridge.xml</File>
     <File>Text/ModernChina_Text_zh_Hans_CN.xml</File>

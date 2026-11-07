@@ -40,21 +40,6 @@ INSERT INTO LeaderTraits (LeaderType, TraitType) VALUES
   ('LEADER_QIAN_XUESEN', 'TRAIT_LEADER_LOW_RELIGIOUS_PREFERENCE');
 
 -- -------------------------------------------------------------
--- 领袖 / 文明能力挂载
--- -------------------------------------------------------------
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
-  -- 中国化：尤里卡/鼓舞 +10%
-  ('TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS', 'MC_BOOST_TECHNOLOGY_10'),
-  ('TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS', 'MC_BOOST_CIVIC_10'),
-  -- 再造中华
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_HOLY_SITE_ADJACENCY'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_CONGRESS_ADJACENCY_PRODUCTION'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_CONGRESS_ADJACENCY_CULTURE'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_HOLY_SITE_PRODUCTION'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_GOVERNOR_CITY_PRODUCTION'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA', 'MC_MAO_GOVERNOR_CITY_CULTURE');
-
--- -------------------------------------------------------------
 -- 议程
 -- -------------------------------------------------------------
 INSERT INTO Agendas (AgendaType, Name, Description) VALUES

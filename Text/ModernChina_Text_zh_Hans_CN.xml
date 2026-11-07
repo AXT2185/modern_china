@@ -20,7 +20,7 @@
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_DESCRIPTION" Text="你的圣地和代表大会提供大量相邻加成，且建造时间减半。你每首次使用一个政体，奖励 1 点总督点数。你有总督的城市产出的生产力和文化翻倍。拥有专属特色总督「朱」。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="战略科学家"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="进入黄金时代时，获得当前时代所有尚未触发的尤里卡。进入黑暗时代时，获得当前时代所有尚未触发的鼓舞。进入英雄时代时，同时获得当前时代所有尚未触发的尤里卡与鼓舞。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="进入黄金时代时，获得当前时代所有尤里卡；进入黑暗时代时，获得当前时代所有鼓舞；进入英雄时代时，同时获得当前时代所有尤里卡与鼓舞。你的每座学院提供 +1 大艺术家点数和 +1 大音乐家点数。你的每座图书馆提供 2 个著作槽位。你的战略资源改良设施提供 +1 文化和 +1 信仰。解锁「化学」后，解锁「核裂变」和「联合作战」；解锁「电脑」后，解锁「核聚变」。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="代表大会"/>
     <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="现代中国独有区域，只有现代中国能够建造，替代该文明的市政广场；其他文明仍使用原版市政广场。由「国家劳动力」市政解锁。你的文明没有代表大会总数限制，但每座城市最多建造一座。除你文明的首座代表大会外，其他代表大会不能建造建筑，建成时不奖励总督点数，也不占用区域位。建成代表大会的城市可获得项目「工作重心」。"/>
@@ -47,20 +47,26 @@
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_NAME" Text="朱"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_TITLE" Text="红军元帅"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_SHORT_TITLE" Text="元帅"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="现代中国专属总督（3 回合部署）。左线军事、右线经济。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="领袖毛的专属总督（3 回合部署）。左线军事、右线经济。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_NAME" Text="红军会师"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_DESCRIPTION" Text="若首次就位于该城市，获取一个「红军」。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_NAME" Text="游击敌后"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="该城市建造侦察类单位的速度 +75%。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="该城市训练的军事单位 +1 移动力。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_NAME" Text="根据地经济"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="该城市训练的建造者 +1 建造次数。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="该城市建造的建造者 +1 建造次数且 +1 移动力。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_NAME" Text="军民结合"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_DESCRIPTION" Text="该城市可以用信仰值购买军事单位。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_NAME" Text="军工建设"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="该城市的军营和工业区及其建筑建造速度 +50%。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="该城市的军营每相邻一个区域便提供 +1 生产力。该城市建造军营、工业区及其建筑的建造速度 +50%。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_NAME" Text="混合经济"/>
-    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="每条经过该城市的贸易路线 +2 金币、+2 食物、+1 生产力。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="该城市每有一个区域，便提供 +2 金币、+2 食物和 +2 生产力。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION" Text="每相邻一个区域 +1 生产力"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_NAME" Text="游击机动"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_DESCRIPTION" Text="由持有「游击敌后」总督晋升的城市训练，获得 +1 移动力。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_NAME" Text="根据地建设者"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_DESCRIPTION" Text="由持有「根据地经济」总督晋升的城市建造，获得 +1 移动力。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_AGENDA_MAO_NAME" Text="阶级斗争"/>
     <Row Language="zh_Hans_CN" Tag="LOC_AGENDA_MAO_DESCRIPTION" Text="喜欢与自己采用相同政体的文明，厌恶与自己政体不同的文明。"/>

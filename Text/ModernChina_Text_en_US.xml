@@ -20,7 +20,7 @@
     <Row Language="en_US" Tag="LOC_TRAIT_LEADER_MAO_REBUILD_CHINA_DESCRIPTION" Text="Your Holy Sites and Congress districts provide large adjacency bonuses and take half the time to build. Each time you adopt a government for the first time, gain 1 Governor title. Cities with a Governor produce double Production and Culture. You have the unique Governor Zhu."/>
 
     <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="Strategic Scientist"/>
-    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="When you enter a Golden Age, gain all untriggered Eurekas for the current era. When you enter a Dark Age, gain all untriggered Inspirations for the current era. When you enter a Heroic Age, gain both all untriggered Eurekas and Inspirations for the current era."/>
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="When you enter a Golden Age, gain all Eurekas for the current era; when you enter a Dark Age, gain all Inspirations for the current era; when you enter a Heroic Age, gain both. Each of your Campuses provides +1 Great Artist point and +1 Great Musician point. Each of your Libraries provides 2 Great Work of Writing slots. Your improved Strategic Resources provide +1 Culture and +1 Faith. After unlocking Chemistry, unlock Nuclear Fission and Combined Arms; after unlocking Computers, unlock Nuclear Fusion."/>
 
     <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="Congress"/>
     <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="A Modern China unique district that only Modern China can build, replacing its Government Plaza; every other civilization keeps the standard Government Plaza. Unlocked by State Workforce. Your civilization has no empire-wide limit on Congress districts, but each city may contain one. Every Congress after your civilization's first cannot hold buildings, grants no Governor title when completed, and does not count against the district capacity limit. A city with a Congress unlocks the Work Focus projects."/>
@@ -47,20 +47,26 @@
     <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_NAME" Text="Zhu"/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_TITLE" Text="Marshal of the Red Army"/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_SHORT_TITLE" Text="Marshal"/>
-    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="Unique Modern China Governor (3 turns to establish). Military line on the left, economic line on the right."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_ZHU_DESCRIPTION" Text="Mao's unique Governor (3 turns to establish). Military line on the left, economic line on the right."/>
 
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_NAME" Text="Red Army Rendezvous"/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_BASE_DESCRIPTION" Text="When first established in this city, gain a Red Army unit."/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_NAME" Text="Guerrilla Behind the Lines"/>
-    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="+75% Production toward Recon units in this city."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION" Text="Military units trained in this city gain +1 Movement."/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_NAME" Text="Base Area Economy"/>
-    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="Builders trained in this city gain +1 build charge."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION" Text="Builders trained in this city gain +1 build charge and +1 Movement."/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_NAME" Text="Army and People Together"/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_DESCRIPTION" Text="Military units can be purchased with Faith in this city."/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_NAME" Text="Military Industry"/>
-    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="+50% Production toward Encampments, Industrial Zones and their buildings in this city."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION" Text="This city's Encampment provides +1 Production for each adjacent district. +50% Production toward Encampments, Industrial Zones and their buildings in this city."/>
     <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_NAME" Text="Mixed Economy"/>
-    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="Trade Routes passing through this city provide +2 Gold, +2 Food and +1 Production."/>
+    <Row Language="en_US" Tag="LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION" Text="This city provides +2 Gold, +2 Food and +2 Production for each of its districts."/>
+
+    <Row Language="en_US" Tag="LOC_MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION" Text="+1 Production for each adjacent district"/>
+    <Row Language="en_US" Tag="LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_NAME" Text="Guerrilla Mobility"/>
+    <Row Language="en_US" Tag="LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_DESCRIPTION" Text="Trained in a city with the Guerrilla Behind the Lines promotion: +1 Movement."/>
+    <Row Language="en_US" Tag="LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_NAME" Text="Base Area Builders"/>
+    <Row Language="en_US" Tag="LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_DESCRIPTION" Text="Trained in a city with the Base Area Economy promotion: +1 Movement."/>
 
     <Row Language="en_US" Tag="LOC_AGENDA_MAO_NAME" Text="Class Struggle"/>
     <Row Language="en_US" Tag="LOC_AGENDA_MAO_DESCRIPTION" Text="Likes civilizations that share his government, dislikes those that do not."/>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mao's leader abilities and the Mao-exclusive governor Zhu. -->
+<GameData>
+
+  <Types>
+    <Row Type="GOVERNOR_ZHU" Kind="KIND_GOVERNOR"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_BASE" Kind="KIND_GOVERNOR_PROMOTION"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_YOUJI" Kind="KIND_GOVERNOR_PROMOTION"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_GENJUDI" Kind="KIND_GOVERNOR_PROMOTION"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_JUNMIN" Kind="KIND_GOVERNOR_PROMOTION"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_JUNGONG" Kind="KIND_GOVERNOR_PROMOTION"/>
+    <Row Type="GOVERNOR_PROMOTION_ZHU_HUNHE" Kind="KIND_GOVERNOR_PROMOTION"/>
+  </Types>
+
+  <Governors>
+    <Row>
+      <GovernorType>GOVERNOR_ZHU</GovernorType>
+      <Image>GOVERNOR_ZHU</Image>
+      <Name>LOC_GOVERNOR_ZHU_NAME</Name>
+      <Title>LOC_GOVERNOR_ZHU_TITLE</Title>
+      <ShortTitle>LOC_GOVERNOR_ZHU_SHORT_TITLE</ShortTitle>
+      <Description>LOC_GOVERNOR_ZHU_DESCRIPTION</Description>
+      <IdentityPressure>8</IdentityPressure>
+      <TransitionStrength>150</TransitionStrength>
+      <AssignCityState>false</AssignCityState>
+      <PortraitImage>GovernorNormal_Zhu</PortraitImage>
+      <PortraitImageSelected>GovernorSelected_Zhu</PortraitImageSelected>
+      <TraitType>TRAIT_LEADER_MAO_GOVERNOR_ZHU</TraitType>
+    </Row>
+  </Governors>
+
+  <GovernorPromotionSets>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_BASE</GovernorPromotion></Row>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_YOUJI</GovernorPromotion></Row>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_GENJUDI</GovernorPromotion></Row>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_JUNMIN</GovernorPromotion></Row>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotion></Row>
+    <Row><GovernorType>GOVERNOR_ZHU</GovernorType><GovernorPromotion>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotion></Row>
+  </GovernorPromotionSets>
+
+  <GovernorPromotions>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_BASE</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_BASE_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_BASE_DESCRIPTION</Description>
+      <Level>0</Level><Column>1</Column><BaseAbility>true</BaseAbility>
+    </Row>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_YOUJI</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_YOUJI_DESCRIPTION</Description>
+      <Level>1</Level><Column>0</Column>
+    </Row>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_GENJUDI</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_GENJUDI_DESCRIPTION</Description>
+      <Level>1</Level><Column>2</Column>
+    </Row>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNMIN</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_JUNMIN_DESCRIPTION</Description>
+      <Level>2</Level><Column>1</Column>
+    </Row>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_JUNGONG_DESCRIPTION</Description>
+      <Level>3</Level><Column>0</Column>
+    </Row>
+    <Row>
+      <GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotionType>
+      <Name>LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_NAME</Name>
+      <Description>LOC_GOVERNOR_PROMOTION_ZHU_HUNHE_DESCRIPTION</Description>
+      <Level>3</Level><Column>2</Column>
+    </Row>
+  </GovernorPromotions>
+
+  <GovernorPromotionPrereqs>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_YOUJI</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_BASE</PrereqGovernorPromotion></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_GENJUDI</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_BASE</PrereqGovernorPromotion></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNMIN</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_YOUJI</PrereqGovernorPromotion></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNMIN</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_GENJUDI</PrereqGovernorPromotion></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_JUNMIN</PrereqGovernorPromotion></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotionType><PrereqGovernorPromotion>GOVERNOR_PROMOTION_ZHU_JUNMIN</PrereqGovernorPromotion></Row>
+  </GovernorPromotionPrereqs>
+
+  <Modifiers>
+    <!-- Mao's leader ability. -->
+    <Row>
+      <ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_GOVERNOR</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_GOVERNOR</SubjectRequirementSetId>
+    </Row>
+
+    <!-- Zhu's promotions. -->
+    <Row>
+      <ModifierId>MC_ZHU_BASE_PLACEHOLDER</ModifierId>
+      <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IDENTITY_PER_TURN</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_TRAINED_UNIT_MOVEMENT</ModifierId>
+      <ModifierType>MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_YOUJI</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_UNIT_MOVEMENT</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_BUILDER_CHARGE</ModifierId>
+      <ModifierType>MODIFIER_SINGLE_CITY_BUILDER_CHARGES</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_GENJUDI</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_BUILDER_TRAINED_MOVEMENT</ModifierId>
+      <ModifierType>MODIFIER_SINGLE_CITY_GRANT_ABILITY_FOR_TRAINED_UNITS</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_GENJUDI</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_BUILDER_UNIT_MOVEMENT</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_DISTRICT_ADJACENCY</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNGONG</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_ENCAMPMENT_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNGONG</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_INDUSTRIAL_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNGONG</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_DISTRICT_GOLD</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_HUNHE</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_DISTRICT_FOOD</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_HUNHE</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_ZHU_DISTRICT_PRODUCTION</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_DISTRICT</ModifierType>
+      <SubjectRequirementSetId>MC_REQSET_CITY_HAS_PROMO_HUNHE</SubjectRequirementSetId>
+    </Row>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId><Name>DistrictType</Name><Value>DISTRICT_HOLY_SITE</Value></Row>
+    <Row><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId><Name>YieldType</Name><Value>YIELD_FAITH</Value></Row>
+    <Row><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+    <Row><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId><Name>Description</Name><Value>LOC_MC_HOLY_SITE_ADJACENCY</Value></Row>
+
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId><Name>DistrictType</Name><Value>DISTRICT_CONGRESS</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId><Name>Description</Name><Value>LOC_MC_CONGRESS_ADJACENCY_PRODUCTION</Value></Row>
+
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId><Name>DistrictType</Name><Value>DISTRICT_CONGRESS</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId><Name>YieldType</Name><Value>YIELD_CULTURE</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+    <Row><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId><Name>Description</Name><Value>LOC_MC_CONGRESS_ADJACENCY_CULTURE</Value></Row>
+
+    <Row><ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId><Name>DistrictType</Name><Value>DISTRICT_HOLY_SITE</Value></Row>
+    <Row><ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId><Name>Amount</Name><Value>100</Value></Row>
+    <Row><ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId><Name>Amount</Name><Value>100</Value></Row>
+    <Row><ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId><Name>YieldType</Name><Value>YIELD_CULTURE</Value></Row>
+    <Row><ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId><Name>Amount</Name><Value>100</Value></Row>
+
+    <Row><ModifierId>MC_ZHU_BASE_PLACEHOLDER</ModifierId><Name>Amount</Name><Value>0</Value></Row>
+    <Row><ModifierId>MC_ZHU_TRAINED_UNIT_MOVEMENT</ModifierId><Name>AbilityType</Name><Value>ABILITY_MC_ZHU_MILITARY_MOVEMENT</Value></Row>
+    <Row><ModifierId>MC_ZHU_UNIT_MOVEMENT</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_ZHU_BUILDER_CHARGE</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_ZHU_BUILDER_TRAINED_MOVEMENT</ModifierId><Name>AbilityType</Name><Value>ABILITY_MC_ZHU_BUILDER_MOVEMENT</Value></Row>
+    <Row><ModifierId>MC_ZHU_BUILDER_UNIT_MOVEMENT</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId><Name>DistrictType</Name><Value>DISTRICT_ENCAMPMENT</Value></Row>
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId><Name>Description</Name><Value>LOC_MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</Value></Row>
+
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_PRODUCTION</ModifierId><Name>DistrictType</Name><Value>DISTRICT_ENCAMPMENT</Value></Row>
+    <Row><ModifierId>MC_ZHU_ENCAMPMENT_PRODUCTION</ModifierId><Name>Amount</Name><Value>50</Value></Row>
+    <Row><ModifierId>MC_ZHU_INDUSTRIAL_PRODUCTION</ModifierId><Name>DistrictType</Name><Value>DISTRICT_INDUSTRIAL_ZONE</Value></Row>
+    <Row><ModifierId>MC_ZHU_INDUSTRIAL_PRODUCTION</ModifierId><Name>Amount</Name><Value>50</Value></Row>
+
+    <Row><ModifierId>MC_ZHU_DISTRICT_GOLD</ModifierId><Name>YieldType</Name><Value>YIELD_GOLD</Value></Row>
+    <Row><ModifierId>MC_ZHU_DISTRICT_GOLD</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+    <Row><ModifierId>MC_ZHU_DISTRICT_FOOD</ModifierId><Name>YieldType</Name><Value>YIELD_FOOD</Value></Row>
+    <Row><ModifierId>MC_ZHU_DISTRICT_FOOD</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+    <Row><ModifierId>MC_ZHU_DISTRICT_PRODUCTION</ModifierId><Name>YieldType</Name><Value>YIELD_PRODUCTION</Value></Row>
+    <Row><ModifierId>MC_ZHU_DISTRICT_PRODUCTION</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+  </ModifierArguments>
+
+  <UnitAbilities>
+    <Row>
+      <UnitAbilityType>ABILITY_MC_ZHU_MILITARY_MOVEMENT</UnitAbilityType>
+      <Name>LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_NAME</Name>
+      <Description>LOC_ABILITY_MC_ZHU_MILITARY_MOVEMENT_DESCRIPTION</Description>
+      <Inactive>true</Inactive>
+      <ShowFloatTextWhenEarned>false</ShowFloatTextWhenEarned>
+      <Permanent>false</Permanent>
+    </Row>
+    <Row>
+      <UnitAbilityType>ABILITY_MC_ZHU_BUILDER_MOVEMENT</UnitAbilityType>
+      <Name>LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_NAME</Name>
+      <Description>LOC_ABILITY_MC_ZHU_BUILDER_MOVEMENT_DESCRIPTION</Description>
+      <Inactive>true</Inactive>
+      <ShowFloatTextWhenEarned>false</ShowFloatTextWhenEarned>
+      <Permanent>false</Permanent>
+    </Row>
+  </UnitAbilities>
+
+  <UnitAbilityModifiers>
+    <Row>
+      <UnitAbilityType>ABILITY_MC_ZHU_MILITARY_MOVEMENT</UnitAbilityType>
+      <ModifierId>MC_ZHU_UNIT_MOVEMENT</ModifierId>
+    </Row>
+    <Row>
+      <UnitAbilityType>ABILITY_MC_ZHU_BUILDER_MOVEMENT</UnitAbilityType>
+      <ModifierId>MC_ZHU_BUILDER_UNIT_MOVEMENT</ModifierId>
+    </Row>
+  </UnitAbilityModifiers>
+
+  <TypeTags>
+    <Row Type="ABILITY_MC_ZHU_BUILDER_MOVEMENT" Tag="CLASS_BUILDER"/>
+  </TypeTags>
+
+  <GovernorPromotionModifiers>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_BASE</GovernorPromotionType><ModifierId>MC_ZHU_BASE_PLACEHOLDER</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_YOUJI</GovernorPromotionType><ModifierId>MC_ZHU_TRAINED_UNIT_MOVEMENT</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_GENJUDI</GovernorPromotionType><ModifierId>MC_ZHU_BUILDER_CHARGE</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_GENJUDI</GovernorPromotionType><ModifierId>MC_ZHU_BUILDER_TRAINED_MOVEMENT</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotionType><ModifierId>MC_ZHU_ENCAMPMENT_ADJACENCY_PRODUCTION</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotionType><ModifierId>MC_ZHU_ENCAMPMENT_PRODUCTION</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_JUNGONG</GovernorPromotionType><ModifierId>MC_ZHU_INDUSTRIAL_PRODUCTION</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotionType><ModifierId>MC_ZHU_DISTRICT_GOLD</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotionType><ModifierId>MC_ZHU_DISTRICT_FOOD</ModifierId></Row>
+    <Row><GovernorPromotionType>GOVERNOR_PROMOTION_ZHU_HUNHE</GovernorPromotionType><ModifierId>MC_ZHU_DISTRICT_PRODUCTION</ModifierId></Row>
+  </GovernorPromotionModifiers>
+
+  <TraitModifiers>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId></Row>
+  </TraitModifiers>
+
+  <RequirementSets>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_YOUJI</RequirementSetId><RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_GENJUDI</RequirementSetId><RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNMIN</RequirementSetId><RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNGONG</RequirementSetId><RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_HUNHE</RequirementSetId><RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType></Row>
+  </RequirementSets>
+
+  <RequirementSetRequirements>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_YOUJI</RequirementSetId><RequirementId>MC_REQ_CITY_HAS_PROMO_YOUJI</RequirementId></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_GENJUDI</RequirementSetId><RequirementId>MC_REQ_CITY_HAS_PROMO_GENJUDI</RequirementId></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNMIN</RequirementSetId><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNMIN</RequirementId></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_JUNGONG</RequirementSetId><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNGONG</RequirementId></Row>
+    <Row><RequirementSetId>MC_REQSET_CITY_HAS_PROMO_HUNHE</RequirementSetId><RequirementId>MC_REQ_CITY_HAS_PROMO_HUNHE</RequirementId></Row>
+  </RequirementSetRequirements>
+
+  <Requirements>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_YOUJI</RequirementId><RequirementType>REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE</RequirementType></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_GENJUDI</RequirementId><RequirementType>REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE</RequirementType></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNMIN</RequirementId><RequirementType>REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE</RequirementType></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNGONG</RequirementId><RequirementType>REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE</RequirementType></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_HUNHE</RequirementId><RequirementType>REQUIREMENT_CITY_HAS_SPECIFIC_GOVERNOR_PROMOTION_TYPE</RequirementType></Row>
+  </Requirements>
+
+  <RequirementArguments>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_YOUJI</RequirementId><Name>Established</Name><Value>true</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_YOUJI</RequirementId><Name>GovernorPromotionType</Name><Value>GOVERNOR_PROMOTION_ZHU_YOUJI</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_GENJUDI</RequirementId><Name>Established</Name><Value>true</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_GENJUDI</RequirementId><Name>GovernorPromotionType</Name><Value>GOVERNOR_PROMOTION_ZHU_GENJUDI</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNMIN</RequirementId><Name>Established</Name><Value>true</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNMIN</RequirementId><Name>GovernorPromotionType</Name><Value>GOVERNOR_PROMOTION_ZHU_JUNMIN</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNGONG</RequirementId><Name>Established</Name><Value>true</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_JUNGONG</RequirementId><Name>GovernorPromotionType</Name><Value>GOVERNOR_PROMOTION_ZHU_JUNGONG</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_HUNHE</RequirementId><Name>Established</Name><Value>true</Value></Row>
+    <Row><RequirementId>MC_REQ_CITY_HAS_PROMO_HUNHE</RequirementId><Name>GovernorPromotionType</Name><Value>GOVERNOR_PROMOTION_ZHU_HUNHE</Value></Row>
+  </RequirementArguments>
+
+</GameData>

@@ -1,5 +1,5 @@
 -- The GameEras age queries are UI-only. Read them here and hand the result to
--- gameplay through ExposedMembers, where the boost grant itself is executed.
+-- gameplay through the supported EXECUTE_SCRIPT channel.
 
 local LEADER_QIAN = 'LEADER_QIAN_XUESEN'
 
@@ -34,30 +34,6 @@ local function isQian(pid)
     return ok and leader == LEADER_QIAN
 end
 
-local function aliveMajorIds()
-    local ids = {}
-    local ok, majors = pcall(function()
-        return PlayerManager.GetAliveMajors()
-    end)
-    if ok and type(majors) == 'table' then
-        for _, player in ipairs(majors) do
-            local okId, pid = pcall(function() return player:GetID() end)
-            if okId and type(pid) == 'number' then ids[#ids + 1] = pid end
-        end
-        return ids
-    end
-
-    for pid = 0, 63 do
-        local player = Players[pid]
-        if player ~= nil then
-            local okAlive, alive = pcall(function() return player:IsAlive() end)
-            local okMajor, major = pcall(function() return player:IsMajor() end)
-            if okAlive and okMajor and alive and major then ids[#ids + 1] = pid end
-        end
-    end
-    return ids
-end
-
 local function publish()
     local okEras, eras = pcall(function() return Game.GetEras() end)
     if not okEras or eras == nil then
@@ -65,28 +41,26 @@ local function publish()
         return
     end
 
-    local shared = type(ExposedMembers) == 'table' and ExposedMembers or nil
-    local api = shared and shared.ModernChina
-    local events = shared and shared.GameEvents
-    local pushed = 0
+    local pid = Game.GetLocalPlayer()
+    if pid == nil or pid < 0 or not isQian(pid) then return end
+    local player = Players[pid]
+    if player == nil then return end
 
-    for _, pid in ipairs(aliveMajorIds()) do
-        if isQian(pid) then
-            local age = ageOf(eras, pid)
-            local ok = false
-            if api ~= nil and type(api.ApplyQianAge) == 'function' then
-                ok = pcall(api.ApplyQianAge, pid, age)
-            end
-            if not ok and events ~= nil and events.MC_QianAgeUpdate ~= nil then
-                ok = pcall(function()
-                    events.MC_QianAgeUpdate(pid, age)
-                end)
-            end
-            if ok then pushed = pushed + 1 end
-        end
+    local okActive, active = pcall(function() return player:IsTurnActive() end)
+    if okActive and not active then return end
+
+    local age = ageOf(eras, pid)
+    local ok = pcall(function()
+        UI.RequestPlayerOperation(pid, PlayerOperations.EXECUTE_SCRIPT, {
+            OnStart = 'MC_QianAgeUpdate',
+            Age = age,
+        })
+    end)
+    if ok then
+        log('published age ' .. tostring(age) .. ' for player ' .. tostring(pid))
+    else
+        log('age publish failed for player ' .. tostring(pid))
     end
-
-    if pushed > 0 then log('published age for ' .. tostring(pushed) .. ' Qian player(s)') end
 end
 
 local eventsToWatch = {

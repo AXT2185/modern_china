@@ -17,6 +17,8 @@ INSERT INTO Types (Type, Kind) VALUES
   ('DISTRICT_CONGRESS',                            'KIND_DISTRICT'),
   ('UNIT_RED_ARMY',                                'KIND_UNIT'),
   ('ABILITY_RED_ARMY',                             'KIND_ABILITY'),
+  ('ABILITY_MC_ZHU_MILITARY_MOVEMENT',             'KIND_ABILITY'),
+  ('ABILITY_MC_ZHU_BUILDER_MOVEMENT',              'KIND_ABILITY'),
   ('BUILDING_QIAN_MECHANICS_CLASS',                'KIND_BUILDING'),
   ('PROJECT_MC_WORK_ECONOMY',                      'KIND_PROJECT'),
   ('PROJECT_MC_WORK_CULTURE',                      'KIND_PROJECT'),

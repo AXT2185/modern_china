@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Qian Xuesen: leader abilities and the Mechanics Class replacement building. -->
+<GameData>
+
+  <BuildingReplaces>
+    <Row CivUniqueBuildingType="BUILDING_QIAN_MECHANICS_CLASS"
+         ReplacesBuildingType="BUILDING_RESEARCH_LAB"/>
+  </BuildingReplaces>
+
+  <Buildings>
+    <Row>
+      <BuildingType>BUILDING_QIAN_MECHANICS_CLASS</BuildingType>
+      <Name>LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME</Name>
+      <Description>LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION</Description>
+      <PrereqTech>TECH_INDUSTRIALIZATION</PrereqTech>
+      <PrereqDistrict>DISTRICT_CAMPUS</PrereqDistrict>
+      <PurchaseYield>YIELD_GOLD</PurchaseYield>
+      <Cost>580</Cost>
+      <AdvisorType>ADVISOR_TECHNOLOGY</AdvisorType>
+      <Maintenance>3</Maintenance>
+      <CitizenSlots>1</CitizenSlots>
+      <TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType>
+    </Row>
+  </Buildings>
+
+  <BuildingPrereqs>
+    <Row>
+      <Building>BUILDING_QIAN_MECHANICS_CLASS</Building>
+      <PrereqBuilding>BUILDING_UNIVERSITY</PrereqBuilding>
+    </Row>
+  </BuildingPrereqs>
+
+  <Building_YieldChanges>
+    <Row BuildingType="BUILDING_QIAN_MECHANICS_CLASS"
+         YieldType="YIELD_SCIENCE" YieldChange="5"/>
+  </Building_YieldChanges>
+
+  <Building_GreatPersonPoints>
+    <Row BuildingType="BUILDING_QIAN_MECHANICS_CLASS"
+         GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST"
+         PointsPerTurn="2"/>
+  </Building_GreatPersonPoints>
+
+  <!-- Convert the Campus adjacency science into Culture, matching the Madrasa pattern. -->
+  <Building_YieldDistrictCopies>
+    <Row BuildingType="BUILDING_QIAN_MECHANICS_CLASS"
+         OldYieldType="YIELD_SCIENCE"
+         NewYieldType="YIELD_CULTURE"/>
+  </Building_YieldDistrictCopies>
+
+  <!-- Qian-only effects use player/district-scoped Modifiers. Do not edit the
+       global District_GreatPersonPoints or Building_GreatWorks tables here:
+       those rows would give the bonuses to every civilization. -->
+  <Modifiers>
+    <Row>
+      <ModifierId>MC_QIAN_CAMPUS_ARTIST_GPP</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+      <SubjectRequirementSetId>DISTRICT_IS_CAMPUS</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_QIAN_CAMPUS_MUSICIAN_GPP</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+      <SubjectRequirementSetId>DISTRICT_IS_CAMPUS</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_QIAN_LIBRARY_WRITING_SLOTS</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_EXTRA_GREAT_WORK_SLOTS</ModifierType>
+    </Row>
+    <Row>
+      <ModifierId>MC_QIAN_STRATEGIC_IMPROVED_CULTURE</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+      <SubjectRequirementSetId>PLOT_HAS_STRATEGIC_IMPROVED_REQUIREMENTS</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_QIAN_STRATEGIC_IMPROVED_FAITH</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+      <SubjectRequirementSetId>PLOT_HAS_STRATEGIC_IMPROVED_REQUIREMENTS</SubjectRequirementSetId>
+    </Row>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row><ModifierId>MC_QIAN_CAMPUS_ARTIST_GPP</ModifierId><Name>GreatPersonClassType</Name><Value>GREAT_PERSON_CLASS_ARTIST</Value></Row>
+    <Row><ModifierId>MC_QIAN_CAMPUS_ARTIST_GPP</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_QIAN_CAMPUS_MUSICIAN_GPP</ModifierId><Name>GreatPersonClassType</Name><Value>GREAT_PERSON_CLASS_MUSICIAN</Value></Row>
+    <Row><ModifierId>MC_QIAN_CAMPUS_MUSICIAN_GPP</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+
+    <Row><ModifierId>MC_QIAN_LIBRARY_WRITING_SLOTS</ModifierId><Name>BuildingType</Name><Value>BUILDING_LIBRARY</Value></Row>
+    <Row><ModifierId>MC_QIAN_LIBRARY_WRITING_SLOTS</ModifierId><Name>GreatWorkSlotType</Name><Value>GREATWORKSLOT_WRITING</Value></Row>
+    <Row><ModifierId>MC_QIAN_LIBRARY_WRITING_SLOTS</ModifierId><Name>Amount</Name><Value>2</Value></Row>
+
+    <Row><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_CULTURE</ModifierId><Name>YieldType</Name><Value>YIELD_CULTURE</Value></Row>
+    <Row><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_CULTURE</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+    <Row><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_FAITH</ModifierId><Name>YieldType</Name><Value>YIELD_FAITH</Value></Row>
+    <Row><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_FAITH</ModifierId><Name>Amount</Name><Value>1</Value></Row>
+  </ModifierArguments>
+
+  <TraitModifiers>
+    <Row><TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType><ModifierId>MC_QIAN_CAMPUS_ARTIST_GPP</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType><ModifierId>MC_QIAN_CAMPUS_MUSICIAN_GPP</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType><ModifierId>MC_QIAN_LIBRARY_WRITING_SLOTS</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_CULTURE</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType><ModifierId>MC_QIAN_STRATEGIC_IMPROVED_FAITH</ModifierId></Row>
+  </TraitModifiers>
+
+</GameData>
