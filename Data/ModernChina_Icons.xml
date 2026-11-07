@@ -41,6 +41,16 @@
     <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_45.dds"/>
     <Row Name="ICON_ATLAS_MC_LEADER_QIAN" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_QIAN_ICON_32.dds"/>
 
+    <!-- 胡锦涛圆形头像：独立图集 -->
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_256.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_80.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_64.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_55.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_50.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="48" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_48.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_45.dds"/>
+    <Row Name="ICON_ATLAS_MC_LEADER_HU" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="LEADER_HU_ICON_32.dds"/>
+
     <!-- 总督徽章：素材 = 朱_总督<size>.dds -->
     <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors256.dds"/>
     <Row Name="ICON_ATLAS_MC_GOVERNORS" IconSize="128" IconsPerRow="1" IconsPerColumn="1" Filename="MC_Governors128.dds"/>
@@ -60,6 +70,7 @@
     <Row Name="ICON_CIVILIZATION_MODERN_CHINA" Atlas="ICON_ATLAS_MC_CIV" Index="0"/>
     <Row Name="ICON_LEADER_MAO"                Atlas="ICON_ATLAS_MC_LEADER" Index="0"/>
     <Row Name="ICON_LEADER_QIAN_XUESEN"       Atlas="ICON_ATLAS_MC_LEADER_QIAN" Index="0"/>
+    <Row Name="ICON_LEADER_HU"                Atlas="ICON_ATLAS_MC_LEADER_HU" Index="0"/>
 
     <Row Name="ICON_GOVERNOR_ZHU"            Atlas="ICON_ATLAS_MC_GOVERNORS" Index="0"/>
     <Row Name="ICON_GOVERNOR_ZHU_FILL"       Atlas="ICON_ATLAS_MC_GOVERNORS_FILL" Index="0"/>
@@ -78,6 +89,22 @@
     <Row Name="ICON_UNIT_RED_ARMY_BLACK"    OtherName="ICON_UNIT_LINE_INFANTRY_BLACK"/>
     <Row Name="ICON_BUILDING_QIAN_MECHANICS_CLASS"      OtherName="ICON_BUILDING_RESEARCH_LAB"/>
     <Row Name="ICON_BUILDING_QIAN_MECHANICS_CLASS_FOW"  OtherName="ICON_BUILDING_RESEARCH_LAB_FOW"/>
+    <Row Name="ICON_DISTRICT_HU_NEIGHBORHOOD"           OtherName="ICON_DISTRICT_NEIGHBORHOOD"/>
+    <Row Name="ICON_DISTRICT_HU_NEIGHBORHOOD_FOW"       OtherName="ICON_DISTRICT_NEIGHBORHOOD_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_ARENA"                OtherName="ICON_BUILDING_ARENA"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_ARENA_FOW"            OtherName="ICON_BUILDING_ARENA_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_ZOO"                  OtherName="ICON_BUILDING_ZOO"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_ZOO_FOW"              OtherName="ICON_BUILDING_ZOO_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_STADIUM"              OtherName="ICON_BUILDING_STADIUM"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_STADIUM_FOW"          OtherName="ICON_BUILDING_STADIUM_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER"         OtherName="ICON_BUILDING_AMPHITHEATER"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER_FOW"     OtherName="ICON_BUILDING_AMPHITHEATER_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART"           OtherName="ICON_BUILDING_MUSEUM_ART"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART_FOW"       OtherName="ICON_BUILDING_MUSEUM_ART_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT"      OtherName="ICON_BUILDING_MUSEUM_ARTIFACT"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT_FOW"  OtherName="ICON_BUILDING_MUSEUM_ARTIFACT_FOW"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER"     OtherName="ICON_BUILDING_BROADCAST_CENTER"/>
+    <Row Name="ICON_BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER_FOW" OtherName="ICON_BUILDING_BROADCAST_CENTER_FOW"/>
   </IconAliases>
 
 </GameData>

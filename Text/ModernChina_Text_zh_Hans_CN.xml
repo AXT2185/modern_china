@@ -13,6 +13,10 @@
     <Row Language="zh_Hans_CN" Tag="LOC_LEADER_QIAN_XUESEN_QUOTE" Text="我的事业在中国，我的成就在中国，我的归宿在中国。"/>
     <Row Language="zh_Hans_CN" Tag="LOC_LOADING_INFO_LEADER_QIAN_XUESEN" Text="从空气动力学到系统工程，钱学森把科学组织成国家能力。他相信时代的转折不只是命运的赐予，更是将全部可能性转化为工程路线的机会。"/>
 
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_HU_NAME" Text="胡锦涛"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LEADER_HU_QUOTE" Text="科学发展观，第一要义是发展，核心是以人为本，基本要求是全面协调可持续，根本方法是统筹兼顾。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_LOADING_INFO_LEADER_HU" Text="他把发展的尺度从单一的增长数字，扩展到人与人、社会与自然之间的协调。社区成为城市的公共客厅，文化、娱乐与知识在同一片街区相连；每一项建设都与周围彼此支撑，让现代化最终回到人的生活之中。"/>
+
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME" Text="中国化"/>
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION" Text="尤里卡和鼓舞额外提供 10% 的科技和市政。当你清除蛮族营地、建立一条贸易路线，以及获得一座与原始首都不在同一大陆的城市时，获得一项随机的不高于当前所处时代的尤里卡或鼓舞。若获得的尤里卡或鼓舞已被触发，则直接解锁该项科技或市政。"/>
 
@@ -22,8 +26,13 @@
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="战略科学家"/>
     <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="进入黄金时代时，获得当前时代所有尤里卡；进入黑暗时代时，获得当前时代所有鼓舞；进入英雄时代时，同时获得当前时代所有尤里卡与鼓舞。你的每座学院提供 +1 大艺术家点数和 +1 大音乐家点数。你的每座图书馆提供 2 个著作槽位。你的战略资源改良设施提供 +1 文化和 +1 信仰。解锁「化学」后，解锁「核裂变」和「联合作战」；解锁「电脑」后，解锁「核聚变」。"/>
 
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_NAME" Text="科学发展观"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_DESCRIPTION" Text="你的社区由「历史记录」解锁，并且拥有可用社区的城市忠诚度始终为满值。社区可以建造娱乐中心和剧院广场对应的建筑。每建成一座代表大会，获得 1 个建造者。你的改良设施与至少一个改良设施相邻时，获得 +1 食物、+1 生产力、+1 金币、+1 科技、+1 文化和 +1 信仰。"/>
+
     <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="代表大会"/>
     <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="现代中国独有区域，只有现代中国能够建造，替代该文明的市政广场；其他文明仍使用原版市政广场。由「国家劳动力」市政解锁。你的文明没有代表大会总数限制，但每座城市最多建造一座。除你文明的首座代表大会外，其他代表大会不能建造建筑，建成时不奖励总督点数，也不占用区域位。建成代表大会的城市可获得项目「工作重心」。"/>
+
+    <Row Language="zh_Hans_CN" Tag="LOC_DISTRICT_HU_NEIGHBORHOOD_DESCRIPTION" Text="胡锦涛的专属社区，替代邻里社区。由「历史记录」而非「城市化」解锁，并可建造娱乐中心和剧院广场对应的建筑。拥有可用社区的城市不会失去忠诚度。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_UNIT_RED_ARMY_NAME" Text="红军"/>
     <Row Language="zh_Hans_CN" Tag="LOC_UNIT_RED_ARMY_DESCRIPTION" Text="现代中国特色的工业时代近战单位，替代线列步兵，由「启蒙运动」市政解锁。移动力 4（快于线列步兵）。拥有 1 次建造次数：可在相邻的山脉上修建一条穿山隧道，任何部队都能借助隧道翻越该山脉。你每拥有一种战略资源便获得 +2 战斗力，每与一个友方单位相邻 +1 战斗力。"/>
@@ -32,6 +41,7 @@
 
     <Row Language="zh_Hans_CN" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME" Text="力学班"/>
     <Row Language="zh_Hans_CN" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION" Text="钱学森的特色建筑，替代研究实验室，由「工业化」解锁。+5 科技值。供电充足时额外 +10 科技值。+1 公民槽位，每回合 +2 大科学家点数。提供等同于学院区相邻科技加成的文化值。"/>
+    <Row Language="zh_Hans_CN" Tag="LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION" Text="胡锦涛的社区可用建筑，可在社区区域中建造。"/>
 
     <Row Language="zh_Hans_CN" Tag="LOC_MC_HOLY_SITE_ADJACENCY" Text="每相邻一个区域 +2 信仰"/>
     <Row Language="zh_Hans_CN" Tag="LOC_MC_CONGRESS_ADJACENCY_PRODUCTION" Text="每相邻一个区域 +2 生产力"/>

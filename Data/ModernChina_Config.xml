@@ -75,6 +75,42 @@
       <Portrait>LEADER_QIAN_XUESEN_NEUTRAL</Portrait>
       <PortraitBackground>LEADER_QIAN_XUESEN_BACKGROUND</PortraitBackground>
     </Row>
+
+    <!-- Hu Jintao: dedicated portrait; the background remains a temporary reuse. -->
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <CivilizationName>LOC_CIVILIZATION_MODERN_CHINA_NAME</CivilizationName>
+      <CivilizationIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationIcon>
+      <LeaderName>LOC_LEADER_HU_NAME</LeaderName>
+      <LeaderIcon>ICON_LEADER_HU</LeaderIcon>
+      <CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME</CivilizationAbilityName>
+      <CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION</CivilizationAbilityDescription>
+      <CivilizationAbilityIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationAbilityIcon>
+      <LeaderAbilityName>LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_NAME</LeaderAbilityName>
+      <LeaderAbilityDescription>LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_DESCRIPTION</LeaderAbilityDescription>
+      <LeaderAbilityIcon>ICON_LEADER_HU</LeaderAbilityIcon>
+      <Portrait>LEADER_HU_NEUTRAL</Portrait>
+      <PortraitBackground>LEADER_QIAN_XUESEN_BACKGROUND</PortraitBackground>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <CivilizationName>LOC_CIVILIZATION_MODERN_CHINA_NAME</CivilizationName>
+      <CivilizationIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationIcon>
+      <LeaderName>LOC_LEADER_HU_NAME</LeaderName>
+      <LeaderIcon>ICON_LEADER_HU</LeaderIcon>
+      <CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME</CivilizationAbilityName>
+      <CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION</CivilizationAbilityDescription>
+      <CivilizationAbilityIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationAbilityIcon>
+      <LeaderAbilityName>LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_NAME</LeaderAbilityName>
+      <LeaderAbilityDescription>LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_DESCRIPTION</LeaderAbilityDescription>
+      <LeaderAbilityIcon>ICON_LEADER_HU</LeaderAbilityIcon>
+      <Portrait>LEADER_HU_NEUTRAL</Portrait>
+      <PortraitBackground>LEADER_QIAN_XUESEN_BACKGROUND</PortraitBackground>
+    </Row>
   </Players>
 
   <PlayerItems>
@@ -86,7 +122,7 @@
       <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
       <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
       <Icon>ICON_DISTRICT_CONGRESS</Icon>
-      <SortIndex>10</SortIndex>
+      <SortIndex>40</SortIndex>
     </Row>
     <Row>
       <Domain>Players:Expansion1_Players</Domain>
@@ -147,7 +183,7 @@
       <Name>LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME</Name>
       <Description>LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION</Description>
       <Icon>ICON_BUILDING_QIAN_MECHANICS_CLASS</Icon>
-      <SortIndex>30</SortIndex>
+      <SortIndex>40</SortIndex>
     </Row>
 
     <Row>
@@ -179,6 +215,208 @@
       <Description>LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION</Description>
       <Icon>ICON_BUILDING_QIAN_MECHANICS_CLASS</Icon>
       <SortIndex>30</SortIndex>
+    </Row>
+
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>DISTRICT_CONGRESS</Type>
+      <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
+      <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
+      <Icon>ICON_DISTRICT_CONGRESS</Icon>
+      <SortIndex>10</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>UNIT_RED_ARMY</Type>
+      <Name>LOC_UNIT_RED_ARMY_NAME</Name>
+      <Description>LOC_UNIT_RED_ARMY_DESCRIPTION</Description>
+      <Icon>ICON_UNIT_RED_ARMY</Icon>
+      <SortIndex>20</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>DISTRICT_HU_NEIGHBORHOOD</Type>
+      <Name>LOC_DISTRICT_NEIGHBORHOOD_NAME</Name>
+      <Description>LOC_DISTRICT_HU_NEIGHBORHOOD_DESCRIPTION</Description>
+      <Icon>ICON_DISTRICT_HU_NEIGHBORHOOD</Icon>
+      <SortIndex>30</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_ARENA</Type>
+      <Name>LOC_BUILDING_ARENA_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_ARENA</Icon>
+      <SortIndex>40</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER</Type>
+      <Name>LOC_BUILDING_AMPHITHEATER_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER</Icon>
+      <SortIndex>41</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_ZOO</Type>
+      <Name>LOC_BUILDING_ZOO_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_ZOO</Icon>
+      <SortIndex>42</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART</Type>
+      <Name>LOC_BUILDING_MUSEUM_ART_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART</Icon>
+      <SortIndex>43</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT</Type>
+      <Name>LOC_BUILDING_MUSEUM_ARTIFACT_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT</Icon>
+      <SortIndex>44</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_STADIUM</Type>
+      <Name>LOC_BUILDING_STADIUM_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_STADIUM</Icon>
+      <SortIndex>45</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion1_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER</Type>
+      <Name>LOC_BUILDING_BROADCAST_CENTER_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER</Icon>
+      <SortIndex>46</SortIndex>
+    </Row>
+
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>DISTRICT_CONGRESS</Type>
+      <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
+      <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
+      <Icon>ICON_DISTRICT_CONGRESS</Icon>
+      <SortIndex>10</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>UNIT_RED_ARMY</Type>
+      <Name>LOC_UNIT_RED_ARMY_NAME</Name>
+      <Description>LOC_UNIT_RED_ARMY_DESCRIPTION</Description>
+      <Icon>ICON_UNIT_RED_ARMY</Icon>
+      <SortIndex>20</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>DISTRICT_HU_NEIGHBORHOOD</Type>
+      <Name>LOC_DISTRICT_NEIGHBORHOOD_NAME</Name>
+      <Description>LOC_DISTRICT_HU_NEIGHBORHOOD_DESCRIPTION</Description>
+      <Icon>ICON_DISTRICT_HU_NEIGHBORHOOD</Icon>
+      <SortIndex>30</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_ARENA</Type>
+      <Name>LOC_BUILDING_ARENA_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_ARENA</Icon>
+      <SortIndex>40</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER</Type>
+      <Name>LOC_BUILDING_AMPHITHEATER_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_AMPHITHEATER</Icon>
+      <SortIndex>41</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_ZOO</Type>
+      <Name>LOC_BUILDING_ZOO_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_ZOO</Icon>
+      <SortIndex>42</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART</Type>
+      <Name>LOC_BUILDING_MUSEUM_ART_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ART</Icon>
+      <SortIndex>43</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT</Type>
+      <Name>LOC_BUILDING_MUSEUM_ARTIFACT_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT</Icon>
+      <SortIndex>44</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_STADIUM</Type>
+      <Name>LOC_BUILDING_STADIUM_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_STADIUM</Icon>
+      <SortIndex>45</SortIndex>
+    </Row>
+    <Row>
+      <Domain>Players:Expansion2_Players</Domain>
+      <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
+      <LeaderType>LEADER_HU</LeaderType>
+      <Type>BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER</Type>
+      <Name>LOC_BUILDING_BROADCAST_CENTER_NAME</Name>
+      <Description>LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION</Description>
+      <Icon>ICON_BUILDING_HU_NEIGHBORHOOD_BROADCAST_CENTER</Icon>
+      <SortIndex>46</SortIndex>
     </Row>
   </PlayerItems>
 

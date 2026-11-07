@@ -13,6 +13,10 @@
     <Row Language="en_US" Tag="LOC_LEADER_QIAN_XUESEN_QUOTE" Text="My career is in China, my achievements are in China, and my home is China."/>
     <Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_QIAN_XUESEN" Text="From aerodynamics to systems engineering, Qian Xuesen organized science into national capability. He saw the turning points of history not merely as gifts of fortune, but as opportunities to turn every possibility into an engineering program."/>
 
+    <Row Language="en_US" Tag="LOC_LEADER_HU_NAME" Text="Hu Jintao"/>
+    <Row Language="en_US" Tag="LOC_LEADER_HU_QUOTE" Text="Scientific development takes development as its essence, puts people first, requires comprehensive, balanced and sustainable development, and follows a holistic approach."/>
+    <Row Language="en_US" Tag="LOC_LOADING_INFO_LEADER_HU" Text="He widened the measure of development beyond a single growth figure to the balance among people, society, and nature. The neighborhood becomes the city's common room, joining culture, recreation, and knowledge on one street; each improvement supports its neighbors, and modernization returns to human life."/>
+
     <Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_NAME" Text="Sinicization"/>
     <Row Language="en_US" Tag="LOC_TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS_DESCRIPTION" Text="Eurekas and Inspirations provide an additional 10% of Science and Culture. Clearing a Barbarian Camp, establishing a Trade Route, or gaining a city on a different continent from your original Capital grants one random Eureka or Inspiration from your current era or earlier. If that Eureka or Inspiration was already triggered, the Technology or Civic is unlocked directly."/>
 
@@ -22,8 +26,13 @@
     <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_NAME" Text="Strategic Scientist"/>
     <Row Language="en_US" Tag="LOC_TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST_DESCRIPTION" Text="When you enter a Golden Age, gain all Eurekas for the current era; when you enter a Dark Age, gain all Inspirations for the current era; when you enter a Heroic Age, gain both. Each of your Campuses provides +1 Great Artist point and +1 Great Musician point. Each of your Libraries provides 2 Great Work of Writing slots. Your improved Strategic Resources provide +1 Culture and +1 Faith. After unlocking Chemistry, unlock Nuclear Fission and Combined Arms; after unlocking Computers, unlock Nuclear Fusion."/>
 
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_NAME" Text="Scientific Outlook on Development"/>
+    <Row Language="en_US" Tag="LOC_TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK_DESCRIPTION" Text="Your Neighborhoods are unlocked by Recorded History, and cities with a functioning Neighborhood are always fully loyal. Neighborhoods can construct the buildings of both the Entertainment Complex and the Theater Square. Gain 1 Builder whenever a Congress is completed. An improved tile with at least one adjacent improved tile gains +1 Food, +1 Production, +1 Gold, +1 Science, +1 Culture and +1 Faith."/>
+
     <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_NAME" Text="Congress"/>
     <Row Language="en_US" Tag="LOC_DISTRICT_CONGRESS_DESCRIPTION" Text="A Modern China unique district that only Modern China can build, replacing its Government Plaza; every other civilization keeps the standard Government Plaza. Unlocked by State Workforce. Your civilization has no empire-wide limit on Congress districts, but each city may contain one. Every Congress after your civilization's first cannot hold buildings, grants no Governor title when completed, and does not count against the district capacity limit. A city with a Congress unlocks the Work Focus projects."/>
+
+    <Row Language="en_US" Tag="LOC_DISTRICT_HU_NEIGHBORHOOD_DESCRIPTION" Text="Hu Jintao's unique Neighborhood, replacing the standard Neighborhood. It is unlocked by Recorded History instead of Urbanization and can construct the buildings of both the Entertainment Complex and the Theater Square. Cities with a functioning Neighborhood are always fully loyal."/>
 
     <Row Language="en_US" Tag="LOC_UNIT_RED_ARMY_NAME" Text="Red Army"/>
     <Row Language="en_US" Tag="LOC_UNIT_RED_ARMY_DESCRIPTION" Text="A unique Industrial era melee unit that replaces the Line Infantry, unlocked by The Enlightenment. 4 Movement (faster than the Line Infantry). It has 1 build charge and can build a Mountain Tunnel on an adjacent Mountain tile, allowing any unit to cross that Mountain. +2 Combat Strength for each Strategic Resource you own, and +1 Combat Strength for each adjacent friendly unit."/>
@@ -32,6 +41,7 @@
 
     <Row Language="en_US" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_NAME" Text="Mechanics Class"/>
     <Row Language="en_US" Tag="LOC_BUILDING_QIAN_MECHANICS_CLASS_DESCRIPTION" Text="Qian Xuesen's unique building, replacing the Research Lab and unlocked by Industrialization. +5 Science. When fully powered, +10 additional Science. +1 Citizen slot and +2 Great Scientist points per turn. Provides Culture equal to the Campus's Science adjacency bonus."/>
+    <Row Language="en_US" Tag="LOC_BUILDING_HU_NEIGHBORHOOD_BUILDING_DESCRIPTION" Text="A building available to Hu Jintao and constructible in a Neighborhood district."/>
 
     <Row Language="en_US" Tag="LOC_MC_HOLY_SITE_ADJACENCY" Text="+2 Faith for each adjacent district"/>
     <Row Language="en_US" Tag="LOC_MC_CONGRESS_ADJACENCY_PRODUCTION" Text="+2 Production for each adjacent district"/>

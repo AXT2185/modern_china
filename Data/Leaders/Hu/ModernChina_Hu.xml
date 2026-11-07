@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hu Jintao's leader-specific modifiers and requirements. -->
+<GameData>
+
+  <Modifiers>
+    <Row>
+      <ModifierId>MC_HU_NEIGHBORHOOD_ALWAYS_LOYAL</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_ALWAYS_LOYAL</ModifierType>
+      <SubjectRequirementSetId>MC_HU_REQSET_CITY_HAS_NEIGHBORHOOD</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>MC_HU_ADJACENT_IMPROVEMENT_ALL_YIELDS</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+      <SubjectRequirementSetId>MC_HU_REQSET_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</SubjectRequirementSetId>
+      <SubjectStackLimit>1</SubjectStackLimit>
+    </Row>
+  </Modifiers>
+
+  <ModifierArguments>
+    <Row>
+      <ModifierId>MC_HU_NEIGHBORHOOD_ALWAYS_LOYAL</ModifierId>
+      <Name>AlwaysLoyal</Name>
+      <Value>1</Value>
+    </Row>
+    <Row>
+      <ModifierId>MC_HU_ADJACENT_IMPROVEMENT_ALL_YIELDS</ModifierId>
+      <Name>YieldType</Name>
+      <Value>YIELD_FOOD,YIELD_PRODUCTION,YIELD_GOLD,YIELD_SCIENCE,YIELD_CULTURE,YIELD_FAITH</Value>
+    </Row>
+    <Row>
+      <ModifierId>MC_HU_ADJACENT_IMPROVEMENT_ALL_YIELDS</ModifierId>
+      <Name>Amount</Name>
+      <Value>1,1,1,1,1,1</Value>
+    </Row>
+  </ModifierArguments>
+
+  <RequirementSets>
+    <Row>
+      <RequirementSetId>MC_HU_REQSET_CITY_HAS_NEIGHBORHOOD</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+    <Row>
+      <RequirementSetId>MC_HU_REQSET_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+  </RequirementSets>
+
+  <RequirementSetRequirements>
+    <Row>
+      <RequirementSetId>MC_HU_REQSET_CITY_HAS_NEIGHBORHOOD</RequirementSetId>
+      <RequirementId>MC_HU_REQ_CITY_HAS_NEIGHBORHOOD</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>MC_HU_REQSET_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementSetId>
+      <RequirementId>MC_HU_REQ_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementId>
+    </Row>
+  </RequirementSetRequirements>
+
+  <Requirements>
+    <Row>
+      <RequirementId>MC_HU_REQ_CITY_HAS_NEIGHBORHOOD</RequirementId>
+      <RequirementType>REQUIREMENT_CITY_HAS_DISTRICT</RequirementType>
+    </Row>
+    <Row>
+      <RequirementId>MC_HU_REQ_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementId>
+      <RequirementType>REQUIREMENT_PLOT_PROPERTY_MATCHES</RequirementType>
+    </Row>
+  </Requirements>
+
+  <RequirementArguments>
+    <Row>
+      <RequirementId>MC_HU_REQ_CITY_HAS_NEIGHBORHOOD</RequirementId>
+      <Name>DistrictType</Name>
+      <Value>DISTRICT_HU_NEIGHBORHOOD</Value>
+    </Row>
+    <Row>
+      <RequirementId>MC_HU_REQ_CITY_HAS_NEIGHBORHOOD</RequirementId>
+      <Name>MustBeFunctioning</Name>
+      <Value>1</Value>
+    </Row>
+    <Row>
+      <RequirementId>MC_HU_REQ_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementId>
+      <Name>PropertyName</Name>
+      <Value>MC_HU_IMPROVEMENT_ADJACENT</Value>
+    </Row>
+    <Row>
+      <RequirementId>MC_HU_REQ_IMPROVEMENT_HAS_ADJACENT_IMPROVEMENT</RequirementId>
+      <Name>PropertyMinimum</Name>
+      <Value>1</Value>
+    </Row>
+  </RequirementArguments>
+
+  <TraitModifiers>
+    <Row>
+      <TraitType>TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK</TraitType>
+      <ModifierId>MC_HU_NEIGHBORHOOD_ALWAYS_LOYAL</ModifierId>
+    </Row>
+    <Row>
+      <TraitType>TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK</TraitType>
+      <ModifierId>MC_HU_ADJACENT_IMPROVEMENT_ALL_YIELDS</ModifierId>
+    </Row>
+  </TraitModifiers>
+
+</GameData>

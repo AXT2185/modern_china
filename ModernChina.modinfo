@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="6">
+<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="8">
   <Properties>
     <Name>LOC_MODERN_CHINA_MOD_TITLE</Name>
     <Description>LOC_MODERN_CHINA_MOD_DESCRIPTION</Description>
@@ -14,7 +14,7 @@
   </References>
   <ActionCriteria>
     <Criteria id="leaderPlayable">
-      <LeaderPlayable>Players:Expansion1_Players::LEADER_MAO,Players:Expansion2_Players::LEADER_MAO,Players:Expansion1_Players::LEADER_QIAN_XUESEN,Players:Expansion2_Players::LEADER_QIAN_XUESEN</LeaderPlayable>
+      <LeaderPlayable>Players:Expansion1_Players::LEADER_MAO,Players:Expansion2_Players::LEADER_MAO,Players:Expansion1_Players::LEADER_QIAN_XUESEN,Players:Expansion2_Players::LEADER_QIAN_XUESEN,Players:Expansion1_Players::LEADER_HU,Players:Expansion2_Players::LEADER_HU</LeaderPlayable>
     </Criteria>
     <Criteria id="Expansion1">
       <GameCoreInUse>Expansion1,Expansion2</GameCoreInUse>
@@ -58,8 +58,11 @@
       <File Priority="80">Data/Leaders/ModernChina_LeaderRegistry.sql</File>
       <File Priority="75">Data/ModernChina_Modifiers.xml</File>
       <File Priority="70">Data/ModernChina_Generated.sql</File>
+      <File Priority="65">Data/Leaders/Hu/ModernChina_HuRegistration.sql</File>
+      <File Priority="60">Data/Leaders/Hu/ModernChina_Hu.xml</File>
       <File Priority="60">Data/Leaders/Mao/ModernChina_Mao.xml</File>
       <File Priority="60">Data/Leaders/Qian/ModernChina_Qian.xml</File>
+      <File Priority="50">Data/Leaders/Hu/ModernChina_HuGenerated.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="MCDatabase_Governors">
       <Criteria>leaderPlayable</Criteria>
@@ -71,7 +74,9 @@
       <Criteria>leaderPlayable</Criteria>
       <Criteria>Expansion2</Criteria>
       <Properties><LoadOrder>20</LoadOrder></Properties>
-      <File>Data/ModernChina_XP2.sql</File>
+      <File Priority="30">Data/ModernChina_XP2.sql</File>
+      <File Priority="20">Data/Leaders/Qian/ModernChina_QianXP2.sql</File>
+      <File Priority="10">Data/Leaders/Hu/ModernChina_HuXP2.sql</File>
     </UpdateDatabase>
     <UpdateIcons id="MCIcons">
       <Criteria>leaderPlayable</Criteria>
@@ -92,6 +97,7 @@
       <File>Scripts/Shared/ModernChina_Shared.lua</File>
       <File>Scripts/Leaders/Mao/ModernChina_Mao.lua</File>
       <File>Scripts/Leaders/Qian/ModernChina_Qian.lua</File>
+      <File>Scripts/Leaders/Hu/ModernChina_Hu.lua</File>
     </AddGameplayScripts>
     <AddUserInterfaces id="MCQianAgeBridge">
       <Criteria>leaderPlayable</Criteria>
@@ -111,12 +117,12 @@
       <zh_Hans_CN>现代中国文明包</zh_Hans_CN>
     </Text>
     <Text id="LOC_MODERN_CHINA_MOD_TEASER">
-      <en_US>New Civilization: Modern China, Leaders: Mao and Qian Xuesen</en_US>
-      <zh_Hans_CN>新文明「现代中国」，领袖「毛」与「钱学森」</zh_Hans_CN>
+      <en_US>New Civilization: Modern China, Leaders: Mao, Qian Xuesen and Hu Jintao</en_US>
+      <zh_Hans_CN>新文明「现代中国」，领袖「毛」、「钱学森」与「胡锦涛」</zh_Hans_CN>
     </Text>
     <Text id="LOC_MODERN_CHINA_MOD_DESCRIPTION">
-      <en_US>Adds the Modern China civilization with Mao and Qian Xuesen, the Congress district, the Red Army unit, Qian's Mechanics Class, and the exclusive governor Zhu.</en_US>
-      <zh_Hans_CN>加入「现代中国」文明及其领袖毛、钱学森，包含特色区域「代表大会」、特色单位「红军」、钱学森的「力学班」以及专属总督「朱」。</zh_Hans_CN>
+      <en_US>Adds the Modern China civilization with Mao, Qian Xuesen and Hu Jintao, including the Congress district, the Red Army, Qian's Mechanics Class, Hu's Neighborhood, and the exclusive governor Zhu.</en_US>
+      <zh_Hans_CN>加入「现代中国」文明及领袖毛、钱学森、胡锦涛，包含特色区域「代表大会」、特色单位「红军」、钱学森的「力学班」、胡锦涛的「社区」以及毛的专属总督「朱」。</zh_Hans_CN>
     </Text>
   </LocalizedText>
   <Files>
@@ -128,6 +134,8 @@
     <File>Platforms/Windows/BLPs/QianLeaderFallback.blp</File>
     <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
     <File>Platforms/Windows/BLPs/UI/QianUI.blp</File>
+    <File>Platforms/Windows/BLPs/UI/HuUI.blp</File>
+    <File>Platforms/Windows/BLPs/HuLeaderFallback.blp</File>
     <File>Platforms/Windows/BLPs/UI/UI_Leaders.blp</File>
     <File>Data/ModernChina_Config.xml</File>
     <File>Data/ModernChina_Types.sql</File>
@@ -139,6 +147,11 @@
     <File>Data/Leaders/Mao/ModernChina_Mao.xml</File>
     <File>Data/Leaders/Mao/ModernChina_ZhuGenerated.sql</File>
     <File>Data/Leaders/Qian/ModernChina_Qian.xml</File>
+    <File>Data/Leaders/Hu/ModernChina_HuRegistration.sql</File>
+    <File>Data/Leaders/Hu/ModernChina_Hu.xml</File>
+    <File>Data/Leaders/Hu/ModernChina_HuGenerated.sql</File>
+    <File>Data/Leaders/Hu/ModernChina_HuXP2.sql</File>
+    <File>Data/Leaders/Qian/ModernChina_QianXP2.sql</File>
     <File>Data/ModernChina_Modifiers.xml</File>
     <File>Data/ModernChina_WorkProjects.xml</File>
     <File>Data/ModernChina_Generated.sql</File>
@@ -149,6 +162,7 @@
     <File>Scripts/Shared/ModernChina_Shared.lua</File>
     <File>Scripts/Leaders/Mao/ModernChina_Mao.lua</File>
     <File>Scripts/Leaders/Qian/ModernChina_Qian.lua</File>
+    <File>Scripts/Leaders/Hu/ModernChina_Hu.lua</File>
     <File>UI/ModernChina_QianAgeBridge.lua</File>
     <File>UI/ModernChina_QianAgeBridge.xml</File>
     <File>Text/ModernChina_Text_zh_Hans_CN.xml</File>

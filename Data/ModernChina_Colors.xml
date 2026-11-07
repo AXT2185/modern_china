@@ -30,5 +30,17 @@
       <Alt3PrimaryColor>COLOR_STANDARD_WHITE_MD2</Alt3PrimaryColor>
       <Alt3SecondaryColor>COLOR_STANDARD_BLUE_MD</Alt3SecondaryColor>
     </Row>
+    <Row>
+      <Type>LEADER_HU</Type>
+      <Usage>Unique</Usage>
+      <PrimaryColor>COLOR_STANDARD_BLUE_MD</PrimaryColor>
+      <SecondaryColor>COLOR_MC_GOLD</SecondaryColor>
+      <Alt1PrimaryColor>COLOR_STANDARD_BLUE_DK</Alt1PrimaryColor>
+      <Alt1SecondaryColor>COLOR_STANDARD_WHITE_LT</Alt1SecondaryColor>
+      <Alt2PrimaryColor>COLOR_STANDARD_ORANGE_MD</Alt2PrimaryColor>
+      <Alt2SecondaryColor>COLOR_STANDARD_WHITE_DK</Alt2SecondaryColor>
+      <Alt3PrimaryColor>COLOR_MC_GOLD</Alt3PrimaryColor>
+      <Alt3SecondaryColor>COLOR_STANDARD_BLUE_DK</Alt3SecondaryColor>
+    </Row>
   </PlayerColors>
 </GameData>

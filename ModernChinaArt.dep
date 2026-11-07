@@ -74,6 +74,7 @@
 			<PackageDependencies>
 				<Element text="LeaderFallbackImages.blp"/>
 				<Element text="QianLeaderFallback.blp"/>
+				<Element text="HuLeaderFallback.blp"/>
 			</PackageDependencies>
 		</Element>
 		<Element>
@@ -86,6 +87,7 @@
 				<Element text="UI/Icons.blp"/>
 				<Element text="UI/UI_Leaders.blp"/>
 				<Element text="UI/QianUI.blp"/>
+				<Element text="UI/HuUI.blp"/>
 			</PackageDependencies>
 		</Element>
 	</LibraryDependencies>

@@ -6,9 +6,4 @@
 INSERT INTO Units_XP2 (UnitType, ResourceCost)
   SELECT 'UNIT_RED_ARMY', ResourceCost FROM Units_XP2 WHERE UnitType = 'UNIT_LINE_INFANTRY';
 
--- Qian Xuesen: the Mechanics Class uses the powered-building model from GS.
-INSERT INTO Buildings_XP2 (BuildingType, RequiredPower) VALUES
-  ('BUILDING_QIAN_MECHANICS_CLASS', 3);
-
-INSERT INTO Building_YieldChangesBonusWithPower (BuildingType, YieldType, YieldChange) VALUES
-  ('BUILDING_QIAN_MECHANICS_CLASS', 'YIELD_SCIENCE', 10);
+-- Leader-specific Gathering Storm rows live under Data/Leaders/<Leader>/.
