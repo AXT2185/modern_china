@@ -80,6 +80,7 @@
 
   <!-- 前端 + 游戏内都要能解析的图标别名（选择界面的 PlayerItems 也会用到） -->
   <IconAliases>
+    <Row Name="ICON_LEADER_MAO_MC"          OtherName="ICON_LEADER_MAO"/>
     <Row Name="ICON_DISTRICT_CONGRESS"      OtherName="ICON_DISTRICT_GOVERNMENT"/>
     <Row Name="ICON_DISTRICT_CONGRESS_FOW"  OtherName="ICON_DISTRICT_GOVERNMENT_FOW"/>
     <Row Name="ICON_UNIT_RED_ARMY"          OtherName="ICON_UNIT_LINE_INFANTRY"/>

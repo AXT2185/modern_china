@@ -8,7 +8,7 @@
 -- ============================================================
 
 local CIV_TYPE    = 'CIVILIZATION_MODERN_CHINA'
-local MAO_LEADER  = 'LEADER_MAO'
+local MAO_LEADER  = 'LEADER_MAO_MC'
 local GOV_ZHU     = 'GOVERNOR_ZHU'
 local UNIT_RED_ARMY = 'UNIT_RED_ARMY'
 local KEY_USED_GOV = 'MC_USED_GOVERNMENTS'

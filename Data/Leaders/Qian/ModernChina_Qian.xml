@@ -19,7 +19,7 @@
       <AdvisorType>ADVISOR_TECHNOLOGY</AdvisorType>
       <Maintenance>3</Maintenance>
       <CitizenSlots>1</CitizenSlots>
-      <TraitType>TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST</TraitType>
+      <TraitType>TRAIT_LEADER_QIAN_MECHANICS_CLASS</TraitType>
     </Row>
   </Buildings>
 

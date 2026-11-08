@@ -25,7 +25,7 @@
       <AssignCityState>false</AssignCityState>
       <PortraitImage>GovernorNormal_Zhu</PortraitImage>
       <PortraitImageSelected>GovernorSelected_Zhu</PortraitImageSelected>
-      <TraitType>TRAIT_LEADER_MAO_GOVERNOR_ZHU</TraitType>
+      <TraitType>TRAIT_LEADER_MAO_GOVERNOR_ZHU_MC</TraitType>
     </Row>
   </Governors>
 
@@ -271,12 +271,12 @@
   </GovernorPromotionModifiers>
 
   <TraitModifiers>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId></Row>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId></Row>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId></Row>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId></Row>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId></Row>
-    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_HOLY_SITE_ADJACENCY</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_CONGRESS_ADJACENCY_CULTURE</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_HOLY_SITE_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_PRODUCTION</ModifierId></Row>
+    <Row><TraitType>TRAIT_LEADER_MAO_REBUILD_CHINA_MC</TraitType><ModifierId>MC_MAO_GOVERNOR_CITY_CULTURE</ModifierId></Row>
   </TraitModifiers>
 
   <RequirementSets>

@@ -7,7 +7,7 @@
   </Colors>
   <PlayerColors>
     <Row>
-      <Type>LEADER_MAO</Type>
+      <Type>LEADER_MAO_MC</Type>
       <Usage>Unique</Usage>
       <PrimaryColor>COLOR_MC_RED</PrimaryColor>
       <SecondaryColor>COLOR_MC_GOLD</SecondaryColor>

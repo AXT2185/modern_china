@@ -3,19 +3,29 @@
 -- 一切实体必须先在此注册
 -- =============================================================
 
-INSERT INTO Types (Type, Kind) VALUES
+-- Keep one third-party Type collision from discarding the entire type table.
+INSERT OR IGNORE INTO Types (Type, Kind) VALUES
   ('CIVILIZATION_MODERN_CHINA',                    'KIND_CIVILIZATION'),
-  ('LEADER_MAO',                                   'KIND_LEADER'),
+  ('LEADER_MAO_MC',                                'KIND_LEADER'),
   ('LEADER_QIAN_XUESEN',                           'KIND_LEADER'),
   ('LEADER_HU',                                    'KIND_LEADER'),
   ('TRAIT_CIVILIZATION_CHINESE_CHARACTERISTICS',   'KIND_TRAIT'),
   ('TRAIT_CIVILIZATION_CONGRESS',                  'KIND_TRAIT'),
   ('TRAIT_CIVILIZATION_RED_ARMY',                  'KIND_TRAIT'),
-  ('TRAIT_LEADER_MAO_REBUILD_CHINA',               'KIND_TRAIT'),
-  ('TRAIT_LEADER_MAO_GOVERNOR_ZHU',                'KIND_TRAIT'),
+  ('TRAIT_LEADER_MAO_REBUILD_CHINA_MC',            'KIND_TRAIT'),
+  ('TRAIT_LEADER_MAO_GOVERNOR_ZHU_MC',             'KIND_TRAIT'),
   ('TRAIT_LEADER_QIAN_STRATEGIC_SCIENTIST',        'KIND_TRAIT'),
+  ('TRAIT_LEADER_QIAN_MECHANICS_CLASS',            'KIND_TRAIT'),
   ('TRAIT_LEADER_HU_SCIENTIFIC_OUTLOOK',           'KIND_TRAIT'),
-  ('TRAIT_AGENDA_MAO',                             'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD',                 'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_ARENA',           'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_ZOO',             'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_STADIUM',         'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_AMPHITHEATER',    'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_MUSEUM_ART',      'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_MUSEUM_ARTIFACT', 'KIND_TRAIT'),
+  ('TRAIT_LEADER_HU_NEIGHBORHOOD_BROADCAST_CENTER','KIND_TRAIT'),
+  ('TRAIT_AGENDA_MAO_MC',                          'KIND_TRAIT'),
   ('DISTRICT_CONGRESS',                            'KIND_DISTRICT'),
   ('UNIT_RED_ARMY',                                'KIND_UNIT'),
   ('ABILITY_RED_ARMY',                             'KIND_ABILITY'),
@@ -35,5 +45,5 @@ INSERT INTO Types (Type, Kind) VALUES
   ('PROJECT_MC_WORK_TECH',                         'KIND_PROJECT');
 
 -- 红军专用能力标签（把单位与能力用同一个 CLASS_tag 绑定）
-INSERT INTO Tags (Tag, Vocabulary) VALUES
+INSERT OR IGNORE INTO Tags (Tag, Vocabulary) VALUES
   ('CLASS_MC_RED_ARMY', 'ABILITY_CLASS');

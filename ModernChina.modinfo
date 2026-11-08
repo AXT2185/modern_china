@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="8">
+<Mod id="0f4e2c61-9b7a-4d33-8e51-6a2b7c1d9e44" version="9">
   <Properties>
     <Name>LOC_MODERN_CHINA_MOD_TITLE</Name>
     <Description>LOC_MODERN_CHINA_MOD_DESCRIPTION</Description>
@@ -14,7 +14,7 @@
   </References>
   <ActionCriteria>
     <Criteria id="leaderPlayable">
-      <LeaderPlayable>Players:Expansion1_Players::LEADER_MAO,Players:Expansion2_Players::LEADER_MAO,Players:Expansion1_Players::LEADER_QIAN_XUESEN,Players:Expansion2_Players::LEADER_QIAN_XUESEN,Players:Expansion1_Players::LEADER_HU,Players:Expansion2_Players::LEADER_HU</LeaderPlayable>
+      <LeaderPlayable>Players:Expansion1_Players::LEADER_MAO_MC,Players:Expansion2_Players::LEADER_MAO_MC,Players:Expansion1_Players::LEADER_QIAN_XUESEN,Players:Expansion2_Players::LEADER_QIAN_XUESEN,Players:Expansion1_Players::LEADER_HU,Players:Expansion2_Players::LEADER_HU</LeaderPlayable>
     </Criteria>
     <Criteria id="Expansion1">
       <GameCoreInUse>Expansion1,Expansion2</GameCoreInUse>

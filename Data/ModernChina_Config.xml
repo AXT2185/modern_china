@@ -8,7 +8,7 @@
     <Row>
       <Domain>Players:Expansion1_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <CivilizationName>LOC_CIVILIZATION_MODERN_CHINA_NAME</CivilizationName>
       <CivilizationIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationIcon>
       <LeaderName>LOC_LEADER_MAO_NAME</LeaderName>
@@ -25,7 +25,7 @@
     <Row>
       <Domain>Players:Expansion2_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <CivilizationName>LOC_CIVILIZATION_MODERN_CHINA_NAME</CivilizationName>
       <CivilizationIcon>ICON_CIVILIZATION_MODERN_CHINA</CivilizationIcon>
       <LeaderName>LOC_LEADER_MAO_NAME</LeaderName>
@@ -117,7 +117,7 @@
     <Row>
       <Domain>Players:Expansion1_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <Type>DISTRICT_CONGRESS</Type>
       <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
       <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
@@ -127,7 +127,7 @@
     <Row>
       <Domain>Players:Expansion1_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <Type>UNIT_RED_ARMY</Type>
       <Name>LOC_UNIT_RED_ARMY_NAME</Name>
       <Description>LOC_UNIT_RED_ARMY_DESCRIPTION</Description>
@@ -137,7 +137,7 @@
     <Row>
       <Domain>Players:Expansion2_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <Type>DISTRICT_CONGRESS</Type>
       <Name>LOC_DISTRICT_CONGRESS_NAME</Name>
       <Description>LOC_DISTRICT_CONGRESS_DESCRIPTION</Description>
@@ -147,7 +147,7 @@
     <Row>
       <Domain>Players:Expansion2_Players</Domain>
       <CivilizationType>CIVILIZATION_MODERN_CHINA</CivilizationType>
-      <LeaderType>LEADER_MAO</LeaderType>
+      <LeaderType>LEADER_MAO_MC</LeaderType>
       <Type>UNIT_RED_ARMY</Type>
       <Name>LOC_UNIT_RED_ARMY_NAME</Name>
       <Description>LOC_UNIT_RED_ARMY_DESCRIPTION</Description>
